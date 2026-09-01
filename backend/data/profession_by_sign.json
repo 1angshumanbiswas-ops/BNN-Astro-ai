@@ -1,0 +1,14 @@
+{
+  "Aries": { "saturnProfession": "Govt. job, Police, Engineering, Mining, Agriculture — high-energy, physical, authority-driven roles", "mercuryEducation": "Technical skills, IT, Machinery, Surgeon, Real estate — sharp, impulsive, technical learning" },
+  "Taurus": { "saturnProfession": "Fine Arts, Banking, Pharmacy, Share Market, Finance — stable, lucrative", "mercuryEducation": "Fashion Designing, Commerce, Banking, Arts — aesthetic, practical, commerce-heavy" },
+  "Gemini": { "saturnProfession": "Journalism, Accountancy, Marketing, Coaching — communication/math/networking", "mercuryEducation": "Media, DJ-RJ, Public Speaker, Influencer, MBA — high adaptability, verbal brilliance" },
+  "Cancer": { "saturnProfession": "Unstable jobs, Food sector, Navy, Tours & travels — changeable, emotionally attached to work", "mercuryEducation": "Hospitality, Hotel/Restaurant, Economics, Nursing — caring, economics-focused" },
+  "Leo": { "saturnProfession": "CEO, Authority, Govt. job, HR — power/management/standing in front of the world", "mercuryEducation": "Administration, Politics, Civil service, Orthopedic — leadership-based" },
+  "Virgo": { "saturnProfession": "Law, Astrology, Consultant, Broker — detailed analysis, problem-solving", "mercuryEducation": "CA, CS, Botany, Teaching business, Translator — precision-heavy" },
+  "Libra": { "saturnProfession": "Medicine, Judge, Lawyer, Bank, Finance — public-facing, luxury, high-end legal matters", "mercuryEducation": "Medical Rep, LIC, Air Hostess, Jewelers, Wine shop — public-facing, luxury trade" },
+  "Scorpio": { "saturnProfession": "Machinery, Surgeon, Coding, Research, Army — deep, intense, dangerous/confidential work", "mercuryEducation": "Occult, Forensic, Archeology, Secret Weapons — study of the hidden" },
+  "Sagittarius": { "saturnProfession": "Teacher, Manager, Clerk, Astrologer, Bank — righteous, traditional, knowledge-based", "mercuryEducation": "Religious books, Puja store, introvert tendencies — spiritual learning" },
+  "Capricorn": { "saturnProfession": "CA, Professor, IAS, UPSC, Neurosurgeon — high-responsibility, long-term, disciplined", "mercuryEducation": "Judiciary, Mining, Leather, self-employed clinic — structural, resource-based" },
+  "Aquarius": { "saturnProfession": "Psychologist, Navy, Teaching, Telecom, CBI — masses, large orgs, space/tech", "mercuryEducation": "Aviation, Philosophy, NGO, study of mind — innovative, humanitarian" },
+  "Pisces": { "saturnProfession": "Aviation, Travel, Auto industry, Teacher — distant lands, expansive vision", "mercuryEducation": "Foreign education, Fisheries, own school/college — education abroad" }
+}

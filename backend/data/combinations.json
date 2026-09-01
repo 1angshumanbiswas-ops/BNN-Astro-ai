@@ -1,0 +1,422 @@
+[
+  {
+    "num": 1,
+    "behind": "Sun",
+    "ahead": "Moon",
+    "text": "Father's life changes after native's birth (job/city/house/travel); mother has name/fame/status, dominates household; native intelligent, resourceful; mood-swinging, fluctuating outer personality; family deity Parvati Maa; may have female bosses"
+  },
+  {
+    "num": 2,
+    "behind": "Moon",
+    "ahead": "Sun",
+    "text": "Father's changes occurred *before* birth; mother gains name/fame *after* birth; parents have good bond; native's emotional side stays hidden from world"
+  },
+  {
+    "num": 3,
+    "behind": "Sun",
+    "ahead": "Mars",
+    "text": "Father buys land/property after birth; father has accident/surgery; father-brother resemble each other; father stubborn; husband dominating/egoistic, from status family; brother dominating; outer personality: strong/muscular, aggressive, sporty; family deity Hanuman/Kartikeya"
+  },
+  {
+    "num": 4,
+    "behind": "Mars",
+    "ahead": "Sun",
+    "text": "Same themes but events occur *before* native's birth; combination also signifies promotions; father may have elder brother; native stubborn/short-tempered internally"
+  },
+  {
+    "num": 5,
+    "behind": "Sun",
+    "ahead": "Mercury",
+    "text": "Father intelligent, may start business after birth; sister/daughter dominating by birth; neighbours/relatives powerful/in politics/govt job; native looks young, talkative, witty, lifelong learner; family deity Vishnu"
+  },
+  {
+    "num": 6,
+    "behind": "Mercury",
+    "ahead": "Sun",
+    "text": "Father intelligent from educated family, business started *before* birth; native introverted but shines when speaking; good education"
+  },
+  {
+    "num": 7,
+    "behind": "Sun",
+    "ahead": "Jupiter",
+    "text": "Father & native resemble; father becomes religious/joins social work after birth; native has ego/dominance from birth, family gains name/fame; good combination for male child; native can become spiritual/great astrologer; family deity Guru/Krishna"
+  },
+  {
+    "num": 8,
+    "behind": "Jupiter",
+    "ahead": "Sun",
+    "text": "Father already religious before birth; native gathers ego/dominance after birth due to social triggers; strong intuition; \"jeev reborn in same family\""
+  },
+  {
+    "num": 9,
+    "behind": "Sun",
+    "ahead": "Venus",
+    "text": "\"Bhagyashali Santan\" — father gains prosperity after native's birth; father/son good-looking; wife from status family, dominant; comfort-loving, artistic native; family deity Lakshmi Maa"
+  },
+  {
+    "num": 10,
+    "behind": "Venus",
+    "ahead": "Sun",
+    "text": "Father already wealthy before birth; wife gains dominance after marriage due to social triggers; money spent on heavy expenses, no happiness from money — spiritual advisory: seek moksha"
+  },
+  {
+    "num": 11,
+    "behind": "Sun",
+    "ahead": "Saturn",
+    "text": "Father faces obstacles after birth; native's profession inspired by/continues father's business; elder brother has ego from birth; native mature/disciplined, struggles build maturity; family deity Shiv Ji"
+  },
+  {
+    "num": 12,
+    "behind": "Saturn",
+    "ahead": "Sun",
+    "text": "Obstacles *before* birth; profession may be govt job with top position; native carries hardship impressions from past life, matures early"
+  },
+  {
+    "num": 13,
+    "behind": "Sun",
+    "ahead": "Rahu",
+    "text": "Obstacles after birth; father is a daydreamer/illusion-prone; father starts new venture (initial problems, later success); trouble having male progeny; native diplomatic/clever/media-savvy; family deity Kaal Bhairav"
+  },
+  {
+    "num": 14,
+    "behind": "Rahu",
+    "ahead": "Sun",
+    "text": "Obstacles before birth; good combination for spirituality (Atma has crossed Maya); trouble before/at birth of male progeny"
+  },
+  {
+    "num": 15,
+    "behind": "Sun",
+    "ahead": "Ketu",
+    "text": "Obstacles after birth; father may be youngest child; father has lifelong tension, may be spiritual/yogi-like; problem in getting 2nd child if son born first; native introverted, argumentative, may have beard/migraine; family deity Ganesh Ji"
+  },
+  {
+    "num": 16,
+    "behind": "Ketu",
+    "ahead": "Sun",
+    "text": "Obstacles before birth; possible miscarriage before father's/native's birth; Dwaj Kirti Yog (good for govt job if Saturn involved); native spiritual from birth"
+  },
+  {
+    "num": 17,
+    "behind": "Moon",
+    "ahead": "Mars",
+    "text": "Mother faces accident/surgery in her lifetime; mother dominating/rough/courageous; husband from distant place; aggressive/reactive mind; problem in uterus/breast for females; vastu warning: don't leave geyser open"
+  },
+  {
+    "num": 18,
+    "behind": "Mars",
+    "ahead": "Moon",
+    "text": "Mother's accident/surgery *before* birth, possibly native born via C-section; husband undergoes change after marriage; native has agricultural/ancestral land; overreactive/impulsive; brother/husband may have addictions"
+  },
+  {
+    "num": 19,
+    "behind": "Moon",
+    "ahead": "Mercury",
+    "text": "Mother intelligent, may become businesswoman after birth; native has elephant memory (forgets if Moon afflicted); education faces changes beyond control; \"Kapat Yog\" — born to be cheated, money lent to friends/relatives not returned"
+  },
+  {
+    "num": 20,
+    "behind": "Mercury",
+    "ahead": "Moon",
+    "text": "Mother already businesswoman before birth; education changes by native's own choice; suited to Psychology/Auditing/Economics/Marketing/Numerology; still prone to being cheated (Kapat Yog)"
+  },
+  {
+    "num": 21,
+    "behind": "Moon",
+    "ahead": "Jupiter",
+    "text": "Mother intelligent/wise, resembles native; mother becomes social worker/pious after birth; native has flickering mind, travels beyond control; caring/nurturing, fond of dairy/sweets"
+  },
+  {
+    "num": 22,
+    "behind": "Jupiter",
+    "ahead": "Moon",
+    "text": "Family change occurred *after* native's birth; native gets cheated/blamed, loses something dear (cited: \"Shri Ram had this combination\"); good for food distribution business; living place changes; fat accumulation, empathetic"
+  },
+  {
+    "num": 23,
+    "behind": "Moon",
+    "ahead": "Venus",
+    "text": "Mother good-looking/money-minded/fine arts inclined, gains finance after native's birth; wife overpowers mother (Venus ahead); ill-health risk to females in house; uterus/fibroid issues; vastu: avoid water source/painting in bedroom"
+  },
+  {
+    "num": 24,
+    "behind": "Venus",
+    "ahead": "Moon",
+    "text": "Mother already wealthy before birth; wife brings life changes after marriage; money \"drains like water,\" no savings; mother overpowers wife (Moon ahead); late marriage tendency in male chart"
+  },
+  {
+    "num": 25,
+    "behind": "Moon",
+    "ahead": "Saturn",
+    "text": "Mother faces problems after native's birth; mother professionally active/strict/hardworking; depression-prone mind (\"stuck\"); frequent cold/cough/asthma; forms **Chandra Mouleshwar Yoga** (with Ketu) and **Vish/Vishdhar Yoga** — good counselors/healers who absorb others' pain"
+  },
+  {
+    "num": 26,
+    "behind": "Saturn",
+    "ahead": "Moon",
+    "text": "Problems *before* birth; frequent job/career changes; born near Shiv temple, Shiv Bhakt; Vishdhar Yoga (great counselor/healer); house has water seepage; **Punarphoo Dosh** — special retrograde-sensitive sub-combination with 5 degree/retrograde variants"
+  },
+  {
+    "num": 27,
+    "behind": "Moon",
+    "ahead": "Rahu",
+    "text": "Problems after birth, overcome later; mind lives in illusion/daydream, highly intuitive; overspending; good for foreign travel, wholesale/grocery/online food business; psychic abilities, water phobia, OCD; avoid blue colour"
+  },
+  {
+    "num": 28,
+    "behind": "Rahu",
+    "ahead": "Moon",
+    "text": "Problems before birth; may remember past life/be affected by paranormal energies; paternal grandparents change after native's birth; overeating, foreign travel"
+  },
+  {
+    "num": 29,
+    "behind": "Moon",
+    "ahead": "Ketu",
+    "text": "Problems after birth; mother/native lifelong tension; possible no progeny after female child; left-eye/urinary issues; devoted-yet-conflicted with mother; travel to Ganga/pilgrimage remedy"
+  },
+  {
+    "num": 30,
+    "behind": "Ketu",
+    "ahead": "Moon",
+    "text": "Problems before birth; possible miscarriage before female progeny (if Jupiter involved too); mother already spiritual; nana-nani face changes after native's birth"
+  },
+  {
+    "num": 31,
+    "behind": "Mars",
+    "ahead": "Mercury",
+    "text": "Brother intelligent/educated; land/property at commercial location; sister/daughter possibly born via surgery; good calculation power/mathematics; neighbours stubborn/quarrelsome; sharp, argumentative communication"
+  },
+  {
+    "num": 32,
+    "behind": "Mercury",
+    "ahead": "Mars",
+    "text": "Education should relate to mathematics/engineering/sports/technical fields (else breaks in education); ancestral property near school/commercial area, brothers may fight over it; good for law/surgery/engineering/sports careers"
+  },
+  {
+    "num": 33,
+    "behind": "Mars",
+    "ahead": "Jupiter",
+    "text": "Native's land near school/temple/social place; possible birthmark from past-life surgery death; husband becomes spiritual/public-active after marriage; good social status"
+  },
+  {
+    "num": 34,
+    "behind": "Jupiter",
+    "ahead": "Mars",
+    "text": "Husband already spiritual before marriage; reddish nose, excess anger/courage; high blood pressure risk; argumentative in married life; recommend full body checkup, blood donation"
+  },
+  {
+    "num": 35,
+    "behind": "Mars",
+    "ahead": "Venus",
+    "text": "Brother/husband good-looking; past-life connection between spouses; **Bhatti Yog** (always helps others, rewarded with beautiful property); passionate relationship; can indicate porn/sexual addiction"
+  },
+  {
+    "num": 36,
+    "behind": "Venus",
+    "ahead": "Mars",
+    "text": "Problems after marriage; wife may need surgery/C-section; combination for **multiple affairs**; if Mercury/Saturn between Mars and Venus — problems in physical relationship; wife stubborn/courageous"
+  },
+  {
+    "num": 37,
+    "behind": "Mars",
+    "ahead": "Saturn",
+    "text": "Family problems after brother's birth; delay in marriage adjustment; profession should relate to Mars (technical/engineering/sports/army) else professional friction; ego clashes with superiors; dental problems, accident-prone body"
+  },
+  {
+    "num": 38,
+    "behind": "Saturn",
+    "ahead": "Mars",
+    "text": "Problems before brother's birth; delay/obstacles in marriage (female chart); profession in engineering/real estate/army; internal mental turmoil (\"civil war in mind\") — remedy: Gita reading, mantra chanting, Mars-related work"
+  },
+  {
+    "num": 39,
+    "behind": "Mars",
+    "ahead": "Rahu",
+    "text": "Problems after marriage; \"courage/anger expanded yoga\" — willing to do risky/bad things; in female chart with Ve+Ma+Ra can indicate running away from home/abuse; can indicate criminal tendencies/jail; intercaste marriage or dispute/separation; husband may be software engineer/NRI"
+  },
+  {
+    "num": 40,
+    "behind": "Rahu",
+    "ahead": "Mars",
+    "text": "Grandparents purchase land or face accident after birth; husband from foreign land (NRI); energy wasted in anger/frustration"
+  },
+  {
+    "num": 41,
+    "behind": "Mars",
+    "ahead": "Ketu",
+    "text": "Post-marriage problems (female chart) — 3 possibilities: separation, miscarriage, death in family; remedy: Suhag items/Mangal Sutra; husband becomes spiritual after marriage; with Jupiter → multiple surgeries/accidents; combined with Saturn → **Langoti Yoga/Sanyas Yoga** (Sa+Ma+Ke)"
+  },
+  {
+    "num": 42,
+    "behind": "Ketu",
+    "ahead": "Mars",
+    "text": "Grandparents' land purchase/surgery after birth; past-life connection with brother; problems before brother's birth, possible miscarriage before his birth"
+  },
+  {
+    "num": 43,
+    "behind": "Mercury",
+    "ahead": "Jupiter",
+    "text": "Sister/daughter wise, may become religious; male child follows; smooth education; native intelligent from birth; \"Guru-Shishya Yog\" — lifelong learner; learning by following teacher's footsteps precisely (perfectionist)"
+  },
+  {
+    "num": 44,
+    "behind": "Jupiter",
+    "ahead": "Mercury",
+    "text": "Native highly intelligent, may be businessman; \"Adhoora Gyan\" — incomplete knowledge, doubts teacher, thinks he knows more; childish nature, fond of writing/kids; intuitive, good for astrology"
+  },
+  {
+    "num": 45,
+    "behind": "Mercury",
+    "ahead": "Venus",
+    "text": "Sister/daughter good-looking, fine-arts inclined; wife intelligent/businesswoman, talkative; education toward fine arts/humanities/biology/finance"
+  },
+  {
+    "num": 46,
+    "behind": "Venus",
+    "ahead": "Mercury",
+    "text": "Wife intelligent, may have younger sister; wife starts business after marriage; possible family garments/medical-store business; indicates multiple affairs in male chart"
+  },
+  {
+    "num": 47,
+    "behind": "Mercury",
+    "ahead": "Saturn",
+    "text": "\"Kumbhkaran Yoga\" — idle, likes to sit and do nothing; lack of interest/troubles in education, possible dropout; business continues family profession background"
+  },
+  {
+    "num": 48,
+    "behind": "Saturn",
+    "ahead": "Mercury",
+    "text": "Idle yoga again but profession follows education chosen; good for stable income, dual income/2 jobs"
+  },
+  {
+    "num": 49,
+    "behind": "Mercury",
+    "ahead": "Rahu",
+    "text": "Family issue/new beginning after sister/daughter's birth; education possibly abroad or with 2 master's degrees; suited to software engineering/AI/tantra/mystical sciences; good for social media, foreign education, YouTube, digital marketing; \"Bhramand Buddhi Yog\""
+  },
+  {
+    "num": 50,
+    "behind": "Rahu",
+    "ahead": "Mercury",
+    "text": "Similar but events before daughter's birth; strong interest in mantra/tantra as past-life continuation; sharp memory, deceptive tendencies"
+  },
+  {
+    "num": 51,
+    "behind": "Mercury",
+    "ahead": "Ketu",
+    "text": "No child after daughter; possible incomplete/broken education; suited to law/occult/vastu/astrology/low-skilled work (\"Kujavat Ketu\" — Ketu acts like Mars); tensions for sister/daughter; multiple romantic partners possible; acne/ulcer"
+  },
+  {
+    "num": 52,
+    "behind": "Ketu",
+    "ahead": "Mercury",
+    "text": "Spiritual/occult education attained in past life; problems/miscarriage before sister/daughter's birth; introverted but a master communicator by choice"
+  },
+  {
+    "num": 53,
+    "behind": "Jupiter",
+    "ahead": "Venus",
+    "text": "Native good-looking/attractive; wife good-looking, from prestigious family, religious before marriage; good wealth/finances; \"Yoga and Bhoga\" — strong sexual desires (esp. male chart); weight gain; prosperity around age 30"
+  },
+  {
+    "num": 54,
+    "behind": "Venus",
+    "ahead": "Jupiter",
+    "text": "Native good-looking from birth; wife gets prestige after marriage; wife becomes religious after marriage; may earn via consultation/teaching/astrology; rounded/chubby face — often seen in good doctors"
+  },
+  {
+    "num": 55,
+    "behind": "Jupiter",
+    "ahead": "Saturn",
+    "text": "Family problems after native's birth; native lazy/procrastinates; profession Jupiter-inspired (teaching, not by choice); depression-prone; \"Karmadhipati-Dharmadhipati Yog\"; self-learning (\"Eklavya\"), finds guru late"
+  },
+  {
+    "num": 56,
+    "behind": "Saturn",
+    "ahead": "Jupiter",
+    "text": "Family problems before birth; **\"Maha Bhagya Yoga\"** — family prospers after native's birth (occurs roughly every 20 years, e.g., 21 Dec 2021); found in charts of teachers/preachers/lawyers/consultants/bankers"
+  },
+  {
+    "num": 57,
+    "behind": "Jupiter",
+    "ahead": "Rahu",
+    "text": "Family problems after birth; native daydreamer with unlimited desires; father starts new venture (initial problems, later success); native's health issues severe in 1st year of life; interest in tantra/mystical sciences; a type of **Raj Yoga**; good for foreign settlement"
+  },
+  {
+    "num": 58,
+    "behind": "Rahu",
+    "ahead": "Jupiter",
+    "text": "Family problems before birth; native may have died early in past life; type of Raj Yoga"
+  },
+  {
+    "num": 59,
+    "behind": "Jupiter",
+    "ahead": "Ketu",
+    "text": "Family problems after birth; native has lifelong tensions, seeks Moksha, will not be reborn; possible miscarriage after native's birth; **\"Ganesh Yog\"**; considered combination for Nobel Prize; person should not be irritated, likes independent work"
+  },
+  {
+    "num": 60,
+    "behind": "Ketu",
+    "ahead": "Jupiter",
+    "text": "Family problems before birth or native had untimely death in past life (possibly reborn same family); possible miscarriage before native's birth; native may be eldest sibling (no elder siblings); also Nobel Prize combination"
+  },
+  {
+    "num": 61,
+    "behind": "Venus",
+    "ahead": "Saturn",
+    "text": "Career progress/prosperity after marriage (sure shot); profession Venus-inspired (finance/banking/medicine/fine arts); wife faces adjustment problems after marriage, may be professionally active; delay in marriage (male chart); heavy expenses — remedy: donate food"
+  },
+  {
+    "num": 62,
+    "behind": "Saturn",
+    "ahead": "Venus",
+    "text": "Career progress guaranteed after marriage; wife already professionally active before marriage; **\"Shukra Vanshi\"** — financially good but suffer leg issues; called a good combination for BNN itself"
+  },
+  {
+    "num": 63,
+    "behind": "Venus",
+    "ahead": "Rahu",
+    "text": "Very beautiful wife; \"Flirt Yoga\" (male chart); grandparents already wealthy; problems in wife's life after marriage — intercaste marriage/foreign move; \"Speculation Yoga\" (share market, if Moon absent); \"Nag Mani Yoga\"/\"Bahu Dhan Yoga\" — desire for easy money; centre of attraction"
+  },
+  {
+    "num": 64,
+    "behind": "Rahu",
+    "ahead": "Venus",
+    "text": "Wife beautiful; grandparents become wealthy after birth; problems in wife's life before marriage; wife possibly from different culture/caste"
+  },
+  {
+    "num": 65,
+    "behind": "Venus",
+    "ahead": "Ketu",
+    "text": "Wife in lifelong tension; post-marriage problems (male chart) — 3 possibilities: separation/miscarriage/death in family; nani-nana already wealthy; possible 3 bank accounts; **Padma Yog/Lakshmi Yog** (great if in Pisces); wear silk clothes remedy"
+  },
+  {
+    "num": 66,
+    "behind": "Ketu",
+    "ahead": "Venus",
+    "text": "Wife in lifelong tension; problems before marriage in wife's life; nani-nana become wealthy after native's birth; fewer marriage problems than combo #65"
+  },
+  {
+    "num": 67,
+    "behind": "Saturn",
+    "ahead": "Rahu",
+    "text": "Desire to settle in foreign country; cannot fully thrive in profession at birthplace, needs cultural change; interest in mantra/tantra; **\"Pitra Karma Dosh\"** (remedy: care for elders); profession in IT/online/digital marketing/MNC; property in 2-3 different cities"
+  },
+  {
+    "num": 68,
+    "behind": "Rahu",
+    "ahead": "Saturn",
+    "text": "Similar but interest in mystical sciences is a past-life continuation; work area not favorable"
+  },
+  {
+    "num": 69,
+    "behind": "Saturn",
+    "ahead": "Ketu",
+    "text": "Hurdles/obstacles in professional life; dislikes working under others, may quit jobs; desires own business; suited to astrology/occultism/tarot/yoga instruction/law/army/surgery/coding/data-analysis; meditation as remedy for restlessness"
+  },
+  {
+    "num": 70,
+    "behind": "Ketu",
+    "ahead": "Saturn",
+    "text": "Initial hurdles in professional life; similar independent-career profile; nani-nana face problems after native's birth"
+  }
+]

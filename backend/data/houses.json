@@ -1,0 +1,166 @@
+{
+  "1": {
+    "title": "Self, Personality, Mind",
+    "planets": {
+      "Sun": "egoistic, dominant, father resembles native, father religious/pious, seeks name/fame",
+      "Moon": "mother/native resemble, kind, religious, empathetic, flickering mind, likes dairy/sweets, fond of travel",
+      "Mars": "brother is public personality, land near school/temple, accident/surgery indicated, stubborn/brave",
+      "Mercury": "education in astrology/spirituality/banking, intelligent, good communicator, may be businessman",
+      "Venus": "wife is guide-like, native good-looking/attractive, money flows when needed, interest in fine arts",
+      "Saturn": "lazy, struggles; if Jupiter ahead of Saturn → Maha Bhagya Yoga; pious, procrastinates, depressive tendencies",
+      "Rahu": "health issues (dangerous 1st year), materialistic, unlimited desires, daydreamer, eventual name/fame/success, interest in photography/tantra",
+      "Ketu": "spiritual, lifelong worry, artery blockage/surgery possible, argumentative, seeks moksha, likes occult/astrology"
+    },
+    "notes": [
+      "Sun: egoistic, dominant, father resembles native, father religious/pious, seeks name/fame",
+      "Moon: mother/native resemble, kind, religious, empathetic, flickering mind, likes dairy/sweets, fond of travel",
+      "Mars: brother is public personality, land near school/temple, accident/surgery indicated, stubborn/brave",
+      "Mercury: education in astrology/spirituality/banking, intelligent, good communicator, may be businessman",
+      "Venus: wife is guide-like, native good-looking/attractive, money flows when needed, interest in fine arts",
+      "Saturn: lazy, struggles; if Jupiter ahead of Saturn → Maha Bhagya Yoga; pious, procrastinates, depressive tendencies",
+      "Rahu: health issues (dangerous 1st year), materialistic, unlimited desires, daydreamer, eventual name/fame/success, interest in photography/tantra",
+      "Ketu: spiritual, lifelong worry, artery blockage/surgery possible, argumentative, seeks moksha, likes occult/astrology"
+    ]
+  },
+  "2": {
+    "title": "Speech, Finance, Family",
+    "planets": {},
+    "notes": [
+      "Finance: malefics (Sa/Su/Ma) → high expenses; Ra/Ke → spoiled finances; Mercury → assured money; Venus → regular money flow; Me+Ve → lots of money; Ve+malefic → unnecessary expenses; Moon → coming/going of money",
+      "Speech: Sa/Ma → rough speech; Sun → practical/blunt speech; Ketu → argumentative; Rahu → diplomatic but bad relations with relatives; Mercury → sweet talk; Venus → good speech; Moon → very talkative"
+    ]
+  },
+  "3": {
+    "title": "Siblings, Courage, Short Travels, Risk, Losses, Communication",
+    "planets": {
+      "Sun": "strong inner strength, pilgrimage travel, younger brother, financial loss due to father",
+      "Moon": "not bold/delicate, unplanned travels, older sister, losses in travel",
+      "Mars": "strong/brave/unique style, adventure trips, younger brother, loss due to own risks",
+      "Mercury": "introvert/intelligent, educational trips/forests, younger sibling, loss via relatives/friends/neighbours",
+      "Venus": "talkative/elegant, elite-class travel, sister, loss via wife/sister/investment",
+      "Saturn": "high risk tolerance, long-distance travel by own vehicle, elder brother, loss via own risk/investment",
+      "Rahu": "no inner strength, unnecessary/foreign travel, poor emotional communication, loss via bad habits",
+      "Ketu": "introvert, pilgrimage/Ganga travel/prayer meetings for the dead, argumentative communication, loss via bad habits"
+    },
+    "notes": [
+      "Sun: strong inner strength, pilgrimage travel, younger brother, financial loss due to father",
+      "Moon: not bold/delicate, unplanned travels, older sister, losses in travel",
+      "Mars: strong/brave/unique style, adventure trips, younger brother, loss due to own risks",
+      "Mercury: introvert/intelligent, educational trips/forests, younger sibling, loss via relatives/friends/neighbours",
+      "Venus: talkative/elegant, elite-class travel, sister, loss via wife/sister/investment",
+      "Saturn: high risk tolerance, long-distance travel by own vehicle, elder brother, loss via own risk/investment",
+      "Rahu: no inner strength, unnecessary/foreign travel, poor emotional communication, loss via bad habits",
+      "Ketu: introvert, pilgrimage/Ganga travel/prayer meetings for the dead, argumentative communication, loss via bad habits"
+    ]
+  },
+  "4": {
+    "title": "House, Mother, Happiness, Property, Academics",
+    "planets": {
+      "Sun": "spiritual home environment, mother rules house, education in administration/medicine",
+      "Moon": "house near water, good mother, education in psychology/numerology/medicine/economics",
+      "Mars": "rough home environment, mother unhappy, education in engineering/surgery",
+      "Mercury": "rectangular house, very intelligent mother, education in commerce, good happiness",
+      "Venus": "beautiful/organized house, trouble-free happy life, wealthy, good mother",
+      "Saturn": "old house, mother struggled a lot, works for family not self, gets ancestral property",
+      "Rahu": "L-shaped house with a well, mother a true homemaker, education in photography/computers, daydreaming",
+      "Ketu": "long/train-coach-shaped house or at a T-point/dead end, mother sad/worried, education in chemicals/occult/astrology"
+    },
+    "notes": [
+      "Sun: spiritual home environment, mother rules house, education in administration/medicine",
+      "Moon: house near water, good mother, education in psychology/numerology/medicine/economics",
+      "Mars: rough home environment, mother unhappy, education in engineering/surgery",
+      "Mercury: rectangular house, very intelligent mother, education in commerce, good happiness",
+      "Venus: beautiful/organized house, trouble-free happy life, wealthy, good mother",
+      "Saturn: old house, mother struggled a lot, works for family not self, gets ancestral property",
+      "Rahu: L-shaped house with a well, mother a true homemaker, education in photography/computers, daydreaming",
+      "Ketu: long/train-coach-shaped house or at a T-point/dead end, mother sad/worried, education in chemicals/occult/astrology",
+      "**Note:** If no planet in houses 1–4 from Jupiter, native is an \"aimless wanderer.\""
+    ]
+  },
+  "5": {
+    "title": "Children, Purva Punya, Purva Doshas, Romance, Talent",
+    "planets": {
+      "Sun": "powerful children, eye diseases and pitra dosha (ancestral curse)",
+      "Moon": "delicate/good-hearted child, possible adoption/abortion before marriage, IVF possible",
+      "Mars": "skilled/fit children, land purchased after birth, indicates unnatural ancestor death (treat pitra dosha)",
+      "Mercury": "highly intelligent child, good academics, punya (merit) from past life",
+      "Venus": "children bring prosperity/happiness, possible \"stree curse\" (women's curse)",
+      "Saturn": "delayed childbirth, child may carry bad habits/past bad karma",
+      "Rahu": "child born after puja/remedy, sarp dosh, skin allergies",
+      "Ketu": "child born after difficulty/surrogacy, pitra dosha"
+    },
+    "notes": [
+      "Sun: powerful children, eye diseases and pitra dosha (ancestral curse)",
+      "Moon: delicate/good-hearted child, possible adoption/abortion before marriage, IVF possible",
+      "Mars: skilled/fit children, land purchased after birth, indicates unnatural ancestor death (treat pitra dosha)",
+      "Mercury: highly intelligent child, good academics, punya (merit) from past life",
+      "Venus: children bring prosperity/happiness, possible \"stree curse\" (women's curse)",
+      "Saturn: delayed childbirth, child may carry bad habits/past bad karma",
+      "Rahu: child born after puja/remedy, sarp dosh, skin allergies",
+      "Ketu: child born after difficulty/surrogacy, pitra dosha"
+    ]
+  },
+  "6": {
+    "title": "Purva Paap Karmas, Diseases, Enemies, Debt",
+    "planets": {
+      "Sun": "bone/eye problems; Moon: mind/depression problems; Mars: blood problems, accidents, surgeries; Mercury: skin allergies, nervousness, memory problems; Venus: repeated ill health, lifelong medicine; Saturn: chronic disease throughout life; Rahu: gastric issues, paranormal energy; Ketu: skin rashes"
+    },
+    "notes": [
+      "Sun: bone/eye problems; Moon: mind/depression problems; Mars: blood problems, accidents, surgeries; Mercury: skin allergies, nervousness, memory problems; Venus: repeated ill health, lifelong medicine; Saturn: chronic disease throughout life; Rahu: gastric issues, paranormal energy; Ketu: skin rashes"
+    ]
+  },
+  "7": {
+    "title": "Partner, Friends, Spouse, Daily Activities, Daily Income",
+    "planets": {
+      "Sun": "disciplined daily life/partner; Moon: many travels; Mars: irritated/frustrated lifestyle; Mercury: well-managed day, intelligent partner; Venus: effortless day, good partner; Saturn: lazy lifestyle/partner, stressed life; Rahu: daydreaming, decent partner; Ketu: stressed lifestyle, no attachment to partner"
+    },
+    "notes": [
+      "Sun: disciplined daily life/partner; Moon: many travels; Mars: irritated/frustrated lifestyle; Mercury: well-managed day, intelligent partner; Venus: effortless day, good partner; Saturn: lazy lifestyle/partner, stressed life; Rahu: daydreaming, decent partner; Ketu: stressed lifestyle, no attachment to partner"
+    ]
+  },
+  "8": {
+    "title": "Longevity, Chronic Diseases",
+    "planets": {
+      "Sun": "good longevity, loses money throughout life; Moon: no chronic disease, good longevity; Mars: inherited property, surgeries; Mercury: good longevity, large inherited property; Venus: good longevity, lifelong medication; Saturn: excellent longevity, chronic diseases; Rahu: poor longevity, diseases; Ketu: poor longevity, electric shock/surgery/blockage"
+    },
+    "notes": [
+      "Sun: good longevity, loses money throughout life; Moon: no chronic disease, good longevity; Mars: inherited property, surgeries; Mercury: good longevity, large inherited property; Venus: good longevity, lifelong medication; Saturn: excellent longevity, chronic diseases; Rahu: poor longevity, diseases; Ketu: poor longevity, electric shock/surgery/blockage"
+    ]
+  },
+  "9": {
+    "title": "Higher Education, Learning, Guru, Long Travels",
+    "planets": {
+      "Sun": "honours/awards, pilgrimage travel, good 2nd child; Moon: many travels for education; Mars: good husband/brother but disturbed education; Mercury: MBA/Masters in economics/commerce; Venus: smooth/effortless education; Saturn: good luck, low interest in studies; Rahu: break in education but 2 master's degrees; Ketu: spiritual education/occult sciences"
+    },
+    "notes": [
+      "Sun: honours/awards, pilgrimage travel, good 2nd child; Moon: many travels for education; Mars: good husband/brother but disturbed education; Mercury: MBA/Masters in economics/commerce; Venus: smooth/effortless education; Saturn: good luck, low interest in studies; Rahu: break in education but 2 master's degrees; Ketu: spiritual education/occult sciences"
+    ]
+  },
+  "10": {
+    "title": "Karma, Profession, Father",
+    "planets": {
+      "Sun": "name/fame in profession, father-grandfather alike; Moon: much travel in profession; Mars: technical/engineering career; Mercury: business/finance/journalism; Venus: career in medicine or fine arts; Saturn: hardworking, career in oil/govt.; Rahu: online business, foreign career; Ketu: self-made career (possibly occult)"
+    },
+    "notes": [
+      "Sun: name/fame in profession, father-grandfather alike; Moon: much travel in profession; Mars: technical/engineering career; Mercury: business/finance/journalism; Venus: career in medicine or fine arts; Saturn: hardworking, career in oil/govt.; Rahu: online business, foreign career; Ketu: self-made career (possibly occult)"
+    ]
+  },
+  "11": {
+    "title": "Gains, Elder Sibling, Friends, Network, Wish Fulfillment",
+    "planets": {
+      "Sun": "good profits, powerful friends; Moon: fluctuating gains; Mars: male friends, gains followed by expenditure; Mercury: good gains from business/job; Venus: wish fulfillment, good gains; Saturn: problems in gains/friends; Rahu: many desires, gains \"dried up\"; Ketu: poor gains/loss"
+    },
+    "notes": [
+      "Sun: good profits, powerful friends; Moon: fluctuating gains; Mars: male friends, gains followed by expenditure; Mercury: good gains from business/job; Venus: wish fulfillment, good gains; Saturn: problems in gains/friends; Rahu: many desires, gains \"dried up\"; Ketu: poor gains/loss"
+    ]
+  },
+  "12": {
+    "title": "Foreign Travel, Hospitalization, Disease, Past, Doctorate",
+    "planets": {
+      "Sun": "powerful enemy, difference of opinion (DOO) with father; Moon: foreign travel, DOO with mother; Mars: chronic disease, DOO with brother; Mercury: PhD degree, DOO with relatives; Venus: rich family, disease, DOO with wife; Saturn: family problems before native's birth; Rahu: foreign travels, family problems before birth; Ketu: 3 foreign tours, moksha-seeking, spiritual person"
+    },
+    "notes": [
+      "Sun: powerful enemy, difference of opinion (DOO) with father; Moon: foreign travel, DOO with mother; Mars: chronic disease, DOO with brother; Mercury: PhD degree, DOO with relatives; Venus: rich family, disease, DOO with wife; Saturn: family problems before native's birth; Rahu: foreign travels, family problems before birth; Ketu: 3 foreign tours, moksha-seeking, spiritual person"
+    ]
+  }
+}

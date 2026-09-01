@@ -1,0 +1,47 @@
+{
+  "source": "Nakshatra Bootcamp Class 2 & Day-3 Notes (Astro Vaibhav Gupta)",
+  "taras": [
+    { "num": 1, "name": "Janma", "english": "Birth Star", "meaning": "Self, body, personality, general well-being. Any new creation, start, endeavor, transformation, or separation from an old existence.", "auspiciousness": "Neutral" },
+    { "num": 2, "name": "Sampat", "english": "Wealth Star", "meaning": "Prosperity, wealth, gains, good fortune. Accumulation of resources for future use (2nd house).", "auspiciousness": "Most Auspicious" },
+    { "num": 3, "name": "Vipat", "english": "Danger Star", "meaning": "Obstacles, difficulties, accidents, trouble. An adverse situation where the individual cannot perform normally and opposing forces are stronger.", "auspiciousness": "Inauspicious (avoid starting new ventures)" },
+    { "num": 4, "name": "Kshema", "english": "Welfare Star", "meaning": "Well-being, security, comfort, peace (Kushal Kshem). Governs physical and mental health.", "auspiciousness": "Auspicious" },
+    { "num": 5, "name": "Pratyari", "english": "Adversary Star", "meaning": "Challenges, opposition, rivalry, conspiracy.", "auspiciousness": "Inauspicious (avoid starting new ventures)" },
+    { "num": 6, "name": "Sadhaka", "english": "Achiever Star", "meaning": "Success in endeavors, achievement, support. Represents perfection, accomplishment, best energy for initiating new projects.", "auspiciousness": "Auspicious" },
+    { "num": 7, "name": "Vadha", "english": "Obstruction / Death Star", "meaning": "Extreme obstruction, loss, destruction of work/effort. Complete eradication/termination of an obstacle, finishing pending tasks, or ending unsupportive relationships/jobs.", "auspiciousness": "Most Inauspicious (avoid starting new ventures)" },
+    { "num": 8, "name": "Mitra", "english": "Friend Star", "meaning": "Acquaintances, support, helpfulness.", "auspiciousness": "Auspicious" },
+    { "num": 9, "name": "Ati Mitra", "english": "Great Friend Star", "meaning": "Closest friends, strongest support, exceptional help.", "auspiciousness": "Most Auspicious" }
+  ],
+  "nakshatraOrder": [
+    "Ashwini","Bharani","Krittika","Rohini","Mrigashira","Ardra","Punarvasu","Pushya","Ashlesha",
+    "Magha","Purva Phalguni","Uttara Phalguni","Hasta","Chitra","Swati","Vishakha","Anuradha","Jyeshtha",
+    "Mula","Purva Ashadha","Uttara Ashadha","Shravana","Dhanishta","Shatabhisha","Purva Bhadrapada","Uttara Bhadrapada","Revati"
+  ],
+  "planetTransitDurations": [
+    { "planet": "Saturn", "duration": "~13 months per Nakshatra", "karakatva": "Long-term challenges, karma, profession, labor, factories, delays" },
+    { "planet": "Jupiter", "duration": "5-7 months per Nakshatra", "karakatva": "Wisdom, guidance, expansion, wealth, husband, children" },
+    { "planet": "Rahu", "duration": "~8 months per Nakshatra", "karakatva": "Transformation, foreign connection, technology" },
+    { "planet": "Ketu", "duration": "~8 months per Nakshatra", "karakatva": "Intuition power (Antar Gyan Shakti), Moksha, detachment" },
+    { "planet": "Mars", "duration": "12-15 days per Nakshatra", "karakatva": "Action, blood, property (land), younger siblings, courage" },
+    { "planet": "Venus", "duration": "30-35 days per Nakshatra", "karakatva": "Comforts, luxury, vehicles, clothing, spouse, relationship, art" },
+    { "planet": "Sun", "duration": "13-14 days per Nakshatra", "karakatva": "Government, father, self-esteem" },
+    { "planet": "Moon", "duration": "~24 hours (1 day) per Nakshatra", "karakatva": "Daily mind, mood, liquid cash, mother, travel" },
+    { "planet": "Mercury", "duration": "13-14 days per Nakshatra", "karakatva": "Education, business, sisters, documentation, speech" }
+  ],
+  "referencePointByInquiry": [
+    { "area": "Mind, Feelings, General Events", "referencePlanet": "Moon (standard method)" },
+    { "area": "Self, Personality, Vitality, Father", "referencePlanet": "Sun" },
+    { "area": "Knowledge, Finance, Children", "referencePlanet": "Jupiter" },
+    { "area": "Profession, Karma, Discipline", "referencePlanet": "Saturn" },
+    { "area": "Paperwork, Communication, Trade", "referencePlanet": "Mercury" },
+    { "area": "Courage, Property, Siblings", "referencePlanet": "Mars" },
+    { "area": "Relationships, Wealth, Luxury", "referencePlanet": "Venus" }
+  ],
+  "notes": [
+    "Tara #1 for a chart is the Janma Nakshatra (Moon's nakshatra, or Ascendant/other planet nakshatra for the alternate methods).",
+    "The 27 nakshatras cycle through the 9 taras three times (3 nakshatras ruled by the same planetary-lord-group land on the same tara).",
+    "Degree-based method: number nakshatras 1-30 mapping directly to a planet's whole-number degree within its sign (ignoring minutes; 0 degrees counts as 1); the corresponding tara relative to the Janma Nakshatra gives that planet's personal Navtara result.",
+    "Age Activation formula: (whole-number degree of planet) / 2 = base age step; significant ages are that step and its multiples, with a +/-6 month buffer.",
+    "Dasha/Antardasha quality: |Mahadasha planet degree - Antardasha planet degree| (absolute difference, 0 treated as 1) gives the Nth nakshatra from the 1-30 list; check that nakshatra's Tara relative to Janma Nakshatra.",
+    "Bhrigu Chakra Paddhati (BCP): a 12-year house-activation cycle. Age 1 = 1st house, Age 2 = 2nd house ... Age 12 = 12th house, then repeats (multiples of 12 = 12th house). The activated house's lord's degree is then run through the Navtara degree method to judge that year."
+  ]
+}

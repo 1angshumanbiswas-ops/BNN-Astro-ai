@@ -1,0 +1,23 @@
+{
+  "name": "bnn-astro-ai-backend",
+  "version": "3.0.0",
+  "description": "BNN_ASTRO_AI — stateless Express backend (compute + generate only, no accounts, no persistence), deployed to Render as a Docker container",
+  "main": "index.js",
+  "type": "commonjs",
+  "engines": {
+    "node": "20"
+  },
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "docx": "^9.7.1",
+    "express": "^4.19.2",
+    "geo-tz": "^8.1.8",
+    "moment-timezone": "^0.6.3",
+    "pdfkit": "^0.20.2",
+    "sharp": "^0.35.4",
+    "sweph": "^2.10.3-8"
+  }
+}

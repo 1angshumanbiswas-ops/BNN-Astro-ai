@@ -1,0 +1,11 @@
+{
+  "Sun": { "jeeva": "Father, Son, Right Eye, right side of body", "ajeeva": "Government, Name/Fame, Status, Authority, Ego, Administration, Leadership, Soul (Atma), Bones, Heart, Immunity, premium/branded items" },
+  "Moon": { "jeeva": "Mother, Eldest Daughter, Eldest Sister, 3rd Wife (male chart)", "ajeeva": "Mind (Manas), Change, Travel, Water, Food, Milk, Emotions, Hormones, Mood swings, Losses, fast-moving vehicles" },
+  "Mars": { "jeeva": "Younger Brother, Husband (female chart), Male Friend", "ajeeva": "Energy, Anger, Aggression, Stubbornness, Courage, risk-taking, Land, Property, Machines, Technical skills, Engineering, Surgery, Sports, Weapons" },
+  "Mercury": { "jeeva": "Youngest sibling, Friends, Relatives, Neighbours, 2nd Wife (male chart), Youngest Daughter, boyfriend/girlfriend", "ajeeva": "Intelligence (Buddhi), Communication, Education, Business, Commerce, Trade, Media, Journalism, Skin, Logic, Analysis" },
+  "Jupiter": { "jeeva": "The Self/native, 2nd Husband (female chart), Teacher (Guru)", "ajeeva": "Wisdom, Knowledge, Spirituality, Religion, Holy Books, Temples, Dharma, Finance, Fat, Space, Dignity, Prestige" },
+  "Venus": { "jeeva": "Wife (male chart)/the female herself (female chart), Daughter, Sister, Female Friend", "ajeeva": "Money, Luxury, Comforts, Vehicles, House, Fine Arts, Beauty, Pleasure, Relationships, Marriage" },
+  "Saturn": { "jeeva": "Elder Brother, Servants/Workers", "ajeeva": "Discipline, Hardship, Delay, Obstacles, Profession/Career, Longevity, Iron, Old age, Justice, Real estate, Mining" },
+  "Rahu": { "jeeva": "Paternal Grandparents", "ajeeva": "Illusion (Maya), Foreign lands, Sudden events, Materialism, Technology, Unconventional paths, Obsession, Poison, Smoke" },
+  "Ketu": { "jeeva": "Maternal Grandparents (per some readings)/spiritual lineage", "ajeeva": "Moksha, Detachment, Spirituality, Occult, Past life, Isolation, Loss of identity, Surgery, Sudden endings" }
+}

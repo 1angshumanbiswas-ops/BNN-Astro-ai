@@ -1,0 +1,9 @@
+{
+  "Sun": { "saturnEffect": "Recognition, authority, high rank, politics, hospital work — career shines under spotlight", "mercuryEffect": "Govt. school/college, civil service exams, or continuing father's business; success in competitive exams", "keyword": "Authority & Legacy" },
+  "Moon": { "saturnEffect": "Food/liquor business, transfers, travel, navy — frequent career changes", "mercuryEffect": "Unstable mind but good memory; psychology, food business, foreign education", "keyword": "Flux & Travel" },
+  "Mars": { "saturnEffect": "Engineering, defense, surgeon, real estate, Vastu — dynamic/aggressive/structural", "mercuryEffect": "Technical skills, factory work, dentistry — may cause breaks/technical pivots in education", "keyword": null },
+  "Venus": { "saturnEffect": "Money, banking, insurance, fine arts, home décor — wealth-accumulating", "mercuryEffect": "Smooth education; perfumes, garments, event management — money from business", "keyword": "Luxury & Wealth" },
+  "Jupiter": { "saturnEffect": "Law, teaching, social work, consultancy — righteous career with growth", "mercuryEffect": "Well-educated, teacher, CA, spiritual education, advisory business — high wisdom", "keyword": null },
+  "Rahu": { "saturnEffect": "Software engineer, MNC, foreign land work, digital marketing — modern/tech paths", "mercuryEffect": "Software, online business, export-import, electronic repair — tech-savvy, global scope", "keyword": null },
+  "Ketu": { "saturnEffect": "Coding, occult, spiritual guru, low-skilled jobs (tailor/painter) — focused/narrow/spiritual", "mercuryEffect": "Astrology, law, coding, shoe store, loan department — investigative, specialized", "keyword": "Occult & Detail" }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "bnn-astro-ai",
+  "version": "3.0.0",
+  "description": "BNN_ASTRO_AI - stateless app: Firebase Hosting (frontend) + standalone Express backend on Render via Docker (no accounts, no persistence)",
+  "private": true,
+  "scripts": {
+    "backend": "cd backend && npm install && node index.js",
+    "emulate:hosting": "npx firebase-tools emulators:start --only hosting",
+    "deploy:hosting": "npx firebase-tools deploy --only hosting"
+  }
+}

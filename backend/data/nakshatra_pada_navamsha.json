@@ -1,0 +1,276 @@
+{
+  "source": "Nakshatra Bootcamp Class 4 (Astro Vaibhav Gupta) - D9/Navamsha = Nakshatra Pada identity (1 Navamsha = 1 Pada = 3d20')",
+  "note": "padaSigns[0] = sign for Pada 1, padaSigns[1] = Pada 2, etc. This is the standard Vedic Navamsha pada-to-sign cycling table.",
+  "nakshatras": [
+    {
+      "name": "Ashwini",
+      "lord": "Ketu",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Bharani",
+      "lord": "Venus",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Krittika",
+      "lord": "Sun",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Rohini",
+      "lord": "Moon",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Mrigashira",
+      "lord": "Mars",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Ardra",
+      "lord": "Rahu",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Punarvasu",
+      "lord": "Jupiter",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Pushya",
+      "lord": "Saturn",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Ashlesha",
+      "lord": "Mercury",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Magha",
+      "lord": "Ketu",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Purva Phalguni",
+      "lord": "Venus",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Uttara Phalguni",
+      "lord": "Sun",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Hasta",
+      "lord": "Moon",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Chitra",
+      "lord": "Mars",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Swati",
+      "lord": "Rahu",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Vishakha",
+      "lord": "Jupiter",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Anuradha",
+      "lord": "Saturn",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Jyeshtha",
+      "lord": "Mercury",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Mula",
+      "lord": "Ketu",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Purva Ashadha",
+      "lord": "Venus",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Uttara Ashadha",
+      "lord": "Sun",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Shravana",
+      "lord": "Moon",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Dhanishta",
+      "lord": "Mars",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Shatabhisha",
+      "lord": "Rahu",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    },
+    {
+      "name": "Purva Bhadrapada",
+      "lord": "Jupiter",
+      "padaSigns": [
+        "Aries",
+        "Taurus",
+        "Gemini",
+        "Cancer"
+      ]
+    },
+    {
+      "name": "Uttara Bhadrapada",
+      "lord": "Saturn",
+      "padaSigns": [
+        "Leo",
+        "Virgo",
+        "Libra",
+        "Scorpio"
+      ]
+    },
+    {
+      "name": "Revati",
+      "lord": "Mercury",
+      "padaSigns": [
+        "Sagittarius",
+        "Capricorn",
+        "Aquarius",
+        "Pisces"
+      ]
+    }
+  ]
+}
