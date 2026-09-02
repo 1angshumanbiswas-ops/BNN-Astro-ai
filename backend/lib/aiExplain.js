@@ -8,7 +8,7 @@
 
 const ANTHROPIC_URL = 'https://api.anthropic.com/v1/messages';
 const MODEL = 'claude-sonnet-5';
-const MAX_TOKENS = 4096;
+const MAX_TOKENS = 8192; // headroom for charts with many matched combinations/houses, so the reply doesn't truncate mid-section
 
 const SYSTEM_PROMPT = `You are a BNN (Bhrigu Nandi Nadi) astrology assistant. You are given a
 deterministic, rule-based BNN chart reading as JSON, already computed by a
@@ -102,15 +102,22 @@ async function generateExplanations(reading, apiKey) {
     throw new Error('Anthropic API returned a malformed response');
   }
 
-  const text = data && Array.isArray(data.content) && data.content[0] && data.content[0].type === 'text'
-    ? data.content[0].text
-    : null;
+  // Look through ALL content blocks for the first text block, rather than
+  // assuming it's always at index 0 — a response can legitimately carry other
+  // block types (e.g. a thinking block) ahead of the text block.
+  const blocks = Array.isArray(data && data.content) ? data.content : [];
+  const textBlock = blocks.find(b => b && b.type === 'text' && typeof b.text === 'string' && b.text.length);
 
-  if (!text) {
-    throw new Error('Anthropic API returned an unexpected response format');
+  if (!textBlock) {
+    // Surface real diagnostics instead of a bare "unexpected format" — this
+    // is what an astrologer (or whoever debugs this next) actually needs to
+    // see: what Anthropic sent back, without dumping the whole payload.
+    const blockTypes = blocks.map(b => b && b.type).join(', ') || 'none';
+    const stopReason = (data && data.stop_reason) || 'unknown';
+    throw new Error(`Anthropic API returned no usable text (stop_reason: ${stopReason}, content block types: [${blockTypes}]) — this usually means the response was truncated (try again) or the model refused the request.`);
   }
 
-  return text;
+  return textBlock.text;
 }
 
 module.exports = { generateExplanations };
