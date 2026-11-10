@@ -1,0 +1,131 @@
+{
+  "general": {
+    "source": "Rahu Ketu Workshop (Astro Vaibhav Gupta, Nov 2024) — interpretive karmic reading, separate from BNN's numbered rules.",
+    "rahu": "Rahu (North Node): desires, ambitions, material growth — unresolved desires from past lives that drive present actions (aagami karma / future karma). Its placement shows where the native has strong desires, ambitions or challenges to overcome.",
+    "ketu": "Ketu (South Node): spiritual growth, detachment, letting go of worldly attachments; habits we are very rigid to change. Accumulated karma (sanchit karma) — where the native has already gained mastery or resolved lessons.",
+    "axis": "The Rahu–Ketu axis: Rahu is what you want to achieve; Ketu is what you have already experienced and learned. Rahu shines only once Ketu's lessons are learned and past issues resolved.",
+    "gene": "Gene theory: ~50% of our traits come from mother (Moon) and ~50% from father (Sun); they in turn carried theirs from their parents, so ~25% each from the four grandparents. Rahu and Ketu shape our subconscious programming, which is why they are called the karma axis."
+  },
+  "signs": {
+    "Aries": {
+      "rahu": {
+        "text": "Makes the person stubborn; takes up daring tasks, progressive nature. Aries is the cardinal fire sign of self-manifestation — the 'I' must stand out. A strong incentive to be creative: cannot settle into routine work even when output would increase; wants to create something completely personal that no one else can create.",
+        "solutions": "Develop leadership quality; prepare a goal list in audio and writing format; personality development classes; scouting at state and national level; psychological counselling."
+      },
+      "ketu": {
+        "text": "Past lives of much physical action, temper and aggression; achieved and lost much because balance was not understood. Very stubborn — will not leave what he has decided, causing arguments and conflict in relationships; progress and competition were all that mattered. Deep sense of 'I', fits of anger, need to prove himself; strong assertiveness from upbringing.",
+        "solutions": "Stabilise relationships in terms of give and take; learn to tell caring from controlling; bring balance by fulfilling the needs of others."
+      }
+    },
+    "Taurus": {
+      "rahu": {
+        "text": "Love and affection come from the heart and mind rather than the senses, so jealousy and hesitation develop. Material wealth comes through creative expression; desire to possess things and people; dislikes physical labour; sexual desire is at its peak.",
+        "solutions": "Transform desire into divine love; move toward Taurus Rahu through gratitude for the land lived on and the resources one has; understand the difference between wants and needs; trust people. Gardening, cooking classes, cooking at home, drawing or creative work; learn to give and accept compliments and gifts."
+      },
+      "ketu": {
+        "text": "Past mastery over material wealth and possessions — family, food, house, gems, jewellery. Residual desire for stability and support. Ketu here does not let him enjoy material things: he has all the wealth but it does not give happiness. Upbringing or environment with over-emphasis on money.",
+        "solutions": "Donate a part of your wealth; do business in partnerships."
+      }
+    },
+    "Gemini": {
+      "rahu": {
+        "text": "Dreams of a life of variety; wants to be seen as adaptable, a good conversationalist and educated. Transmutes emotions into interests; interested in spirituality, education and travel in a passive, abstract way rather than by experiencing them; mixes well with others only while in the role of teacher.",
+        "solutions": "Journalism, keeping a journal or diary, physical activity such as dancing that brings flow; develop the mind and introspection of 'who am I' (Sagittarius wants freedom; Gemini Rahu gets there through the mind)."
+      },
+      "ketu": {
+        "text": "Past mastery over publication, communication, ideas, duality, multitasking and decision making. Now: indecisive, detached from ego with communication — has the knowledge but is reluctant to speak, and expressions and words do not match. Feels a lack of friends, and those who come do not stay long. Here to free himself from bondage and seek universal knowledge; interested in psychology but hates studying.",
+        "solutions": "Take up weekend classes or courses of real interest and finish them; put yourself in situations where you must speak."
+      }
+    },
+    "Cancer": {
+      "rahu": {
+        "text": "Brings light in darkness, a nurturing nature and good luck. Parents may have sent the native to hostel, he may have lived away or not had the right childhood, so he becomes materialistic but must realise the Cancer traits to succeed. Represses emotions out of fear of being cheated and not being able to handle it.",
+        "solutions": "Nurturing professions and acts; self-love meditation; find a family and achieve emotional harmony; travel (a must). Ultimate aim: nourishing others — food distribution, sharing spiritual knowledge, creating jobs — and learning to adapt wants to needs."
+      },
+      "ketu": {
+        "text": "Mastered home, emotions and care in a past life; remembers it but feels detached from that area now. Past-life experience of a lack of love, care and good parenting — seeks nurture and care from everyone around; sensitive past-life feelings keep him from becoming a fully mature adult ('immaturity residue'). Highest karma: understand his true responsibility and do it to the fullest. In a female chart this often shows a search for a father figure; in a male chart, taking up the father role.",
+        "solutions": "Identify what you want to do, study the lives of people who have already done it and follow their footsteps, take baby steps."
+      }
+    },
+    "Leo": {
+      "rahu": {
+        "text": "Helps the native realise his desires: ambition, good taste, can easily identify correct people and talents, fine imagination, desire for leadership roles and politics, may want to be a famous star or actor. May show fake loyalty that Aquarius Ketu does not approve of, which hinders success.",
+        "solutions": "Interior decoration, political involvement, leadership roles in society or school, joining an organisation; always visualise 'what would happen if…'."
+      },
+      "ketu": {
+        "text": "Leo means performing arts, dynamism, creativity, authority and administration; Ketu here means he has already experienced these — his status was high and he had no time for people. Now he must learn to mix with others, help, and do a social cause. Problems: excessive craving for warmth, hiding from dark truths of reality, trouble in romance.",
+        "solutions": "Involvement brings happiness — join parties, birthdays; give yourself away without asking for anything in return."
+      }
+    },
+    "Virgo": {
+      "rahu": {
+        "text": "Wants to be the best in business; may be the boss's right hand, without whom decisions are not taken. Generally quiet, with feelings more important than logic; must develop Virgo's analytical skills. Imaginative, like a poet. Married life suffers due to this Rahu placement. After enough emotional drama he seeks Virgo's reasoning about who is worthy of his sympathy.",
+        "solutions": "Inspirational writing, typing, neatness, gardening, public speaking."
+      },
+      "ketu": {
+        "text": "Not favourable for the mind: makes the native judgmental and critical of everything, unable to appreciate beauty, inclined to analysis. 'The hardest position' — the native tends to realise his own rigidity. In the past life he was methodical, detail-oriented, calculative, perfectionist and practical; these habits remain in the subconscious.",
+        "solutions": "Meditation an hour a day, enjoy your own company, judge people only on their abilities."
+      }
+    },
+    "Libra": {
+      "rahu": {
+        "text": "A sign of balance and harmony; everything he takes up has a definite sense of justice, priority and deeper significance, with rapid progress and wealth and honour acquired. Happiness comes only after he is forced to re-evaluate his desires, involve with people and abandon ego.",
+        "solutions": "Take care of skin and hygiene, hair styling, a beauty regime, new furnishings."
+      },
+      "ketu": {
+        "text": "In a prior life he judged happiness by the success and failure of people close to him and did everything to please them without appreciation, leaving resentment; he spends much of the first half of this life coping with the residue of his gullibility. Becomes too practical, hindering spiritual growth; constant indecisiveness; lets others run his life and leans on them; interested in fashion, cosmetics, shopping; extremely co-operative to the point of being a doormat; inferiority complex; gracious host; works hard at romance but the relationship suffers. Plans decisions on marriage, job and lifestyle logically — 'logic without feeling' leads to marriage without love and existence without living; depression eventually forces him to act on his feelings, giving nodal balance between Aries and Libra.",
+        "solutions": "Force yourself to undertake leadership roles; be enthusiastic about your beliefs; cultivate spontaneity; do things on your own once in a while; find a guru to follow or a strong person to lean on. Biggest lesson: make the head rule the heart."
+      }
+    },
+    "Scorpio": {
+      "rahu": {
+        "text": "Occult, digging into truth, mysticism, transformation ('caterpillar becomes butterfly'). Rahu here wants the person tested; change and transformation are the main aim, and in Rahu's period major transformation is seen.",
+        "solutions": "Astrology, occult, philosophy, perfume making, research work."
+      },
+      "ketu": {
+        "text": "Accustomed from past lives to a peculiar intensity that turns to anger when not allowed expression; deeply hurt, like a wounded animal dangerous to anyone who represents the slightest threat. Past lives involved many hidden or underground activities, rebellion against normal life structure and various punishments; distorted desire and misuse of power may have been seen. Now: desire to live a life of ease without complications, maintain karmic status, avoid further downward spirals; stubborn toward those who oppose his ideals; concerns about earnings and resources.",
+        "solutions": "Transform desire into divine love; the 'volcanoes of Scorpio' can turn into the 'blue waters of Taurus'."
+      }
+    },
+    "Sagittarius": {
+      "rahu": {
+        "text": "Interest in higher education, law, spirituality and the guru's teaching. Interested in dharma but breaks traditional patterns to bring his own new way of spirituality, dharma or philosophy; objectives do not reach completion of things; dull personality.",
+        "solutions": "Teaching whatever you know, Gita reading, sports."
+      },
+      "ketu": {
+        "text": "Past lives of wildness, driven by instinct and nervous energy; restless and rash tendencies, defends his own point of view, bachelor-like soul so others cannot come close naturally and he feels alone; seeks shortcuts and acts foolishly in social situations without realising it; embarrassing situations keep forcing him to polish his social skills, behaviour, mannerisms and speech. Sagittarius Ketu understood the nature of the universe and through Gemini Rahu must spread that message — the cause of eternal restlessness. Past life had traces of isolation; this life's purpose is sharing knowledge and awareness.",
+        "solutions": "Develop communication skills, share whatever you learn, become an expert at what you do first."
+      }
+    },
+    "Capricorn": {
+      "rahu": {
+        "text": "Business ambition, foreign tours; good health and vitality if Saturn is well placed. Emotional and reluctant to change; the desire for dream fulfilment is less than the need for emotional security.",
+        "solutions": "Mathematical work, travel, exploring various cultures, astrology and the occult."
+      },
+      "ketu": {
+        "text": "Past-life habits of ambition, seeking authority and desire to dominate others — a tendency to be faced and overcome. Came receiving status and pride, so constantly seeks respect and validation; an attention seeker who works double hard to prove himself a hero, with less emotional sensitivity. Lives in the past, carries burdens, can fall ill if failure comes, sees the world with a self-righteous attitude, sets a wall around himself and feels inferior when seeking advice; very materialistic go-getter. Learned accomplishment by hard work and toil so knows no nourishment — through Cancer Rahu he must nourish others and receive nourishment. Looks young as age passes. Neglected elders in the past life, so now believes in family bonding — may look cold but is very emotional.",
+        "solutions": "Nourish others (food distribution, spiritual knowledge, creating jobs); learn to adapt wants to needs."
+      }
+    },
+    "Aquarius": {
+      "rahu": {
+        "text": "Desire for moral and emotional support. Aquarius is innovation, freedom, social groups, networks, wishes, dreams, brotherhood, upliftment, a scientific sign. His aim in life is to develop the concept of universal brotherhood.",
+        "solutions": "Scientific study, public speaking, writing, a YouTube channel, mass communication, international things."
+      },
+      "ketu": {
+        "text": "Snobbish and aloof in the past life, craved the absence of friends; people were not there in times of stress; developed detachment from most of the world, which felt free; very secretive. Must learn that isolation is the technique to gather inner strength. Aquarius carries Rahu and Saturn energy — past habits of being revolutionary, creating something new, believing in equality for all. Wishes to be alone but cannot live without people and admiration; a justice seeker who dislikes wrong actions. In this life he steps on others to succeed but remembers and gives them due credit; superiority complex and stubbornness hinder relationships.",
+        "solutions": "Do imaginative things, devote yourself to a humanitarian cause, have dignity and channel it properly."
+      }
+    },
+    "Pisces": {
+      "rahu": {
+        "text": "Seeks being left alone, isolation and higher knowledge of self; cannot tolerate rejection, which brings depression. Unexpected acquisition from foreigners, gives vitality; questions what existence is; psychic abilities, imagination, creative information, sci-fi writing talent.",
+        "solutions": "Aviation, swimming, foreign travel, a true sense of spirituality, healing, seeking emptiness."
+      },
+      "ketu": {
+        "text": "Past-life habits of escaping or coping out of responsibilities; superstitious; lived in isolation (12th house); mindful of his words so they do not hurt others; was robbed because of his emotional side yet still cannot see anybody in pain. Past-life experience of pain lets him easily feel others' pain. Must avoid escapism and daydreaming and learn to say 'no' — people who know his sensitivity misuse it, which becomes his biggest problem.",
+        "solutions": "Purification and perfection, self-discipline, the art of saying no; forgive everyone to remove the 'burning coal' from your hand."
+      }
+    }
+  }
+}
