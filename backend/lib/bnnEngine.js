@@ -7,7 +7,7 @@
 // Rules 3/4 (ahead/behind => plan/history), Rule 5 (7th aspect, friend/enemy),
 // Rule 8 (planet strength via 2nd/12th/7th support), plus the 70-combination
 // lookup and the 12-house signification matrix.
-
+ 
 const fs = require('fs');
 const path = require('path');
 const { computeChart, computeAscendant, computeSunTimes } = require('./ephemeris');
@@ -16,35 +16,36 @@ const { computeVimshottariMahadasha } = require('./dasha');
 const { buildRecommendations } = require('./recommendations');
 const { buildParasharicCrossRef } = require('./parasharicRef');
 const { buildNakshatraDetail } = require('./nakshatraDetail');
-
+const { buildNodalAxis } = require('./nodalAxis');
+ 
 const combinations = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'combinations.json'), 'utf8'));
 const houses = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'houses.json'), 'utf8'));
 const significators = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'significators.json'), 'utf8'));
-
+ 
 const SIGNS = ['Aries', 'Taurus', 'Gemini', 'Cancer', 'Leo', 'Virgo',
   'Libra', 'Scorpio', 'Sagittarius', 'Capricorn', 'Aquarius', 'Pisces'];
-
+ 
 const PLANET_ORDER = ['Sun', 'Moon', 'Mars', 'Mercury', 'Jupiter', 'Venus', 'Saturn', 'Rahu', 'Ketu'];
-
+ 
 const DEV_GRAH = new Set(['Sun', 'Moon', 'Mars', 'Jupiter', 'Ketu']);
 const DANAV_GRAH = new Set(['Saturn', 'Venus', 'Mercury', 'Rahu']);
 const CROSS_FRIENDS = [['Sun', 'Mercury'], ['Jupiter', 'Saturn'], ['Jupiter', 'Mercury']];
-
+ 
 const DESTINY_MAKERS = new Set(['Sun', 'Venus', 'Mercury', 'Jupiter']);
 const DESTINY_BREAKERS = new Set(['Saturn', 'Rahu', 'Ketu']);
 const DESTINY_MODIFIERS = new Set(['Moon', 'Mars']);
-
+ 
 function isFriendly(a, b) {
   if (a === b) return true;
   if (DEV_GRAH.has(a) && DEV_GRAH.has(b)) return true;
   if (DANAV_GRAH.has(a) && DANAV_GRAH.has(b)) return true;
   return CROSS_FRIENDS.some(([x, y]) => (x === a && y === b) || (x === b && y === a));
 }
-
+ 
 function findCombo(behind, ahead) {
   return combinations.find(c => c.behind === behind && c.ahead === ahead) || null;
 }
-
+ 
 /**
  * Build the full BNN reading for a computed chart.
  * @param {Date} birthUtc
@@ -52,13 +53,13 @@ function findCombo(behind, ahead) {
  */
 function buildReading(birthUtc, meta = {}) {
   const { ayanamsa, planets } = computeChart(birthUtc);
-
+ 
   // Nakshatra/pada + DMS degree for every graha (used by the Graha Info table)
   const grahaInfo = {};
   for (const [name, p] of Object.entries(planets)) {
     grahaInfo[name] = { nakshatra: nakshatraOf(p.longitude), dms: toDMS(p.degreeInSign) };
   }
-
+ 
   // Standard Vedic Rashi (D1) chart: sidereal Ascendant (Lagna) + Whole Sign
   // houses counted from the Ascendant's sign. This is the conventional
   // cross-reference chart (e.g. what deva.guru displays) - separate from
@@ -78,26 +79,26 @@ function buildReading(birthUtc, meta = {}) {
       ascendant: { sign: asc.sign, degree: +asc.degreeInSign.toFixed(2), nakshatra: nakshatraOf(asc.longitude) },
       planets: vPlanets
     };
-
+ 
     const sunTimes = computeSunTimes(birthUtc, meta.lat, meta.lon);
     panchanga = {
       ...computePanchanga(planets.Sun.longitude, planets.Moon.longitude, birthUtc, meta.tzOffsetMinutes || 0),
       ...sunTimes,
       ayanamsa: +ayanamsa.toFixed(4)
     };
-
+ 
     vimshottariDasha = computeVimshottariMahadasha(planets.Moon.longitude, birthUtc, 1);
   }
-
+ 
   // Rule 1: Jeeva Lagna = Jupiter's sign = House 1
   const jupiterSignIndex = planets.Jupiter.signIndex;
-
+ 
   const withHouses = {};
   for (const [name, p] of Object.entries(planets)) {
     const houseNum = ((p.signIndex - jupiterSignIndex + 12) % 12) + 1;
     withHouses[name] = { ...p, house: houseNum };
   }
-
+ 
   // Group planets by house number, sorted by degreeInSign ascending within a house
   const byHouse = {};
   for (let h = 1; h <= 12; h++) byHouse[h] = [];
@@ -107,7 +108,7 @@ function buildReading(birthUtc, meta = {}) {
   for (const h of Object.keys(byHouse)) {
     byHouse[h].sort((a, b) => a.degreeInSign - b.degreeInSign);
   }
-
+ 
   // Trine groups: houses {1,5,9}->1, {2,6,10}->2, {3,7,11}->3, {4,8,12}->0(=4)
   function trineGroup(h) { const g = h % 4; return g === 0 ? 4 : g; }
   const trines = { 1: [], 2: [], 3: [], 4: [] };
@@ -117,13 +118,13 @@ function buildReading(birthUtc, meta = {}) {
   for (const g of Object.keys(trines)) {
     trines[g].sort((a, b) => a.degreeInSign - b.degreeInSign);
   }
-
+ 
   // --- Relationship detection ---
   // 1) Within-trine ahead/behind pairs (Rule 2/3/4)
   // 2) Next-house "ahead" pairs (planet in house+1 is always ahead of a planet in house h)
   // 3) 7th-house aspect pairs (Rule 5)
   const relationships = []; // { type, behind, ahead, comboBehindAhead, comboAheadBehind }
-
+ 
   for (const g of Object.keys(trines)) {
     const arr = trines[g];
     for (let i = 0; i < arr.length; i++) {
@@ -132,7 +133,7 @@ function buildReading(birthUtc, meta = {}) {
       }
     }
   }
-
+ 
   for (let h = 1; h <= 12; h++) {
     const nextH = (h % 12) + 1;
     if (byHouse[h].length && byHouse[nextH].length) {
@@ -143,7 +144,7 @@ function buildReading(birthUtc, meta = {}) {
       }
     }
   }
-
+ 
   const seenAspect = new Set();
   for (let h = 1; h <= 12; h++) {
     const oppH = ((h + 5) % 12) + 1; // 7th from h
@@ -158,7 +159,7 @@ function buildReading(birthUtc, meta = {}) {
       }
     }
   }
-
+ 
   // Attach combination text (both directions matter per BNN methodology)
   const NO_SEVENTH = new Set(['Rahu', 'Ketu']); // BNN Guide rule: Rahu/Ketu do not form 7th-house combinations
   const combosFound = [];
@@ -185,7 +186,7 @@ function buildReading(birthUtc, meta = {}) {
       }
     }
   }
-
+ 
   // Rule 8: planet strength via 2nd/12th/7th support
   const strength = {};
   for (const name of PLANET_ORDER) {
@@ -201,7 +202,7 @@ function buildReading(birthUtc, meta = {}) {
     else level = 'challenged';
     strength[name] = { level, supporters: supporters.map(s => s.name) };
   }
-
+ 
   // Empty-house fallback chain (Section 5.1)
   function emptyHouseNote(h) {
     const oppH = ((h + 5) % 12) + 1;
@@ -211,7 +212,7 @@ function buildReading(birthUtc, meta = {}) {
     if (trineOccupants.length) return `No planet here or in its 7th aspect; read via trine-mates: ${trineOccupants.map(p => p.name).join(', ')}.`;
     return `Empty house with no trine or 7th-aspect support - read using this house's general (karak tatwa) significations only.`;
   }
-
+ 
   // House-by-house narrative
   const houseReadings = [];
   for (let h = 1; h <= 12; h++) {
@@ -231,7 +232,7 @@ function buildReading(birthUtc, meta = {}) {
       emptyNote: occupants.length === 0 ? emptyHouseNote(h) : null
     });
   }
-
+ 
   const reading = {
     meta,
     birthUtc: birthUtc.toISOString(),
@@ -255,11 +256,13 @@ function buildReading(birthUtc, meta = {}) {
     panchanga,
     vimshottariDasha
   };
-
+ 
   reading.recommendations = buildRecommendations(reading);
   reading.parasharicCrossRef = buildParasharicCrossRef(reading); // may be null if no lat/lon
   reading.nakshatraDetail = buildNakshatraDetail(reading);
+  reading.nodalAxis = buildNodalAxis(reading); // Rahu-Ketu karmic axis (Rahu Ketu Workshop notes)
   return reading;
 }
-
+ 
 module.exports = { buildReading, findCombo, isFriendly };
+ 
