@@ -4,11 +4,11 @@
 // matched combinations, house-by-house reading), Recommendations &
 // Suggestions, and the Vimshottari Dasha timeline. Pure-JS libraries
 // (`docx`, `pdfkit`) — no headless browser / native deps required.
-
+ 
 const { Document, Packer, Paragraph, TextRun, HeadingLevel, Table, TableRow, TableCell, WidthType, BorderStyle, ImageRun } = require('docx');
 const PDFDocument = require('pdfkit');
 const { renderChartImagePng } = require('./chartImage');
-
+ 
 function fmtDate(iso) {
   return new Date(iso).toLocaleDateString('en-IN', { year: 'numeric', month: 'long', day: 'numeric' });
 }
@@ -16,7 +16,7 @@ function fmtTime(iso) {
   return new Date(iso).toLocaleTimeString('en-IN', { hour: '2-digit', minute: '2-digit' });
 }
 function fmtDMS(dms) { return `${dms.d}°${String(dms.m).padStart(2, '0')}'${String(dms.s).padStart(2, '0')}"`; }
-
+ 
 // pdfkit's built-in Helvetica (WinAnsi encoding) can't render Devanagari
 // diacritics (ā, ñ, ṅ, ś, ...) or the "→" arrow used elsewhere in the app -
 // they come out as mojibake. Fold diacritics to their plain-ASCII base
@@ -27,7 +27,7 @@ function pdfSafe(s) {
     .normalize('NFKD').replace(/[̀-ͯ]/g, '')
     .replace(/→/g, '->');
 }
-
+ 
 // AI explanation text is prompted (see server/lib/aiExplain.js) to come back
 // as four sections under exact plain-text headings. Parse those out when
 // present so each renders as its own labeled sub-section; if the model
@@ -52,16 +52,16 @@ function parseAiSections(text) {
   found.forEach(s => { s.body = s.body.trim(); });
   return found;
 }
-
+ 
 // ---------------------------------------------------------------- DOCX ----
-
+ 
 function cell(text, opts = {}) {
   return new TableCell({
     children: [new Paragraph({ children: [new TextRun({ text: String(text), bold: !!opts.bold, size: 20 })] })],
     width: opts.width ? { size: opts.width, type: WidthType.PERCENTAGE } : undefined
   });
 }
-
+ 
 function simpleTable(headers, rows) {
   return new Table({
     width: { size: 100, type: WidthType.PERCENTAGE },
@@ -71,22 +71,22 @@ function simpleTable(headers, rows) {
     ]
   });
 }
-
+ 
 function heading(text, level = HeadingLevel.HEADING_1) {
   return new Paragraph({ text, heading: level, spacing: { before: 240, after: 120 } });
 }
 function para(text, opts = {}) {
   return new Paragraph({ children: [new TextRun({ text, italics: !!opts.italic, size: opts.size || 21 })], spacing: { after: 100 } });
 }
-
+ 
 async function buildDocx(reading) {
   const p = reading.planets;
   const children = [];
-
+ 
   children.push(new Paragraph({ text: 'BNN_ASTRO_AI — Chart Report', heading: HeadingLevel.TITLE }));
   children.push(para(`${reading.meta.name || 'Native'} — ${reading.meta.place || ''}`, { italic: true }));
   children.push(para(`Birth: ${fmtDate(reading.birthUtc)} ${fmtTime(reading.birthUtc)} UTC  |  Ayanamsa (Lahiri): ${reading.ayanamsa}°  |  Jeeva Lagna (BNN): ${reading.jeevaLagna.sign}`));
-
+ 
   const chartImagePng = await renderChartImagePng(reading.vedicChart);
   if (chartImagePng) {
     children.push(heading('Natal Chart (D1, North Indian)'));
@@ -95,7 +95,7 @@ async function buildDocx(reading) {
       spacing: { after: 120 }
     }));
   }
-
+ 
   if (reading.vedicChart) {
     children.push(heading('Vedic Kundli Summary'));
     children.push(para(`Ascendant (Lagna): ${reading.vedicChart.ascendant.sign} ${reading.vedicChart.ascendant.degree}°  |  Nakshatra: ${reading.vedicChart.ascendant.nakshatra.name}, pada ${reading.vedicChart.ascendant.nakshatra.pada}`));
@@ -106,25 +106,25 @@ async function buildDocx(reading) {
     children.push(para(`Tithi: ${pc.tithi.name} (${pc.tithi.paksha})   Nakshatra: ${pc.nakshatra.name} pada ${pc.nakshatra.pada}   Yoga: ${pc.yoga.name}   Karana: ${pc.karana.name}   Vāra: ${pc.vara.name}`));
     children.push(para(`Sunrise: ${pc.sunrise ? fmtTime(pc.sunrise) : '—'}   Sunset: ${pc.sunset ? fmtTime(pc.sunset) : '—'}`));
   }
-
+ 
   children.push(heading('Graha Info'));
   children.push(simpleTable(
     ['Planet', 'Sign', 'Degree', 'Nakshatra (Lord)', 'Pada', 'Retrograde'],
     Object.entries(p).map(([name, v]) => [name, v.sign, fmtDMS(v.dms), `${v.nakshatra.name} (${v.nakshatra.lord})`, String(v.nakshatra.pada), v.retrograde ? 'Yes' : ''])
   ));
-
+ 
   children.push(heading('BNN Analysis — Houses from Jeeva Lagna (Jupiter)'));
   children.push(simpleTable(
     ['Planet', 'Sign', 'Degree', 'House', 'Rule 8 Strength'],
     Object.entries(p).map(([name, v]) => [name, v.sign, `${v.degree}°`, `House ${v.house}`, reading.strength[name] ? reading.strength[name].level : ''])
   ));
-
+ 
   children.push(heading('Matched Planetary Combinations'));
   reading.combosFound.slice().sort((a, b) => a.num - b.num).forEach(c => {
     children.push(new Paragraph({ children: [new TextRun({ text: `#${c.num}  ${c.behind} → ${c.ahead}`, bold: true, size: 21 })], spacing: { before: 100 } }));
     children.push(para(c.text.replace(/\*\*/g, '')));
   });
-
+ 
   children.push(heading('House-by-House Reading'));
   reading.houseReadings.forEach(h => {
     children.push(new Paragraph({ children: [new TextRun({ text: `House ${h.house}${h.title ? ' — ' + h.title : ''}`, bold: true, size: 22 })], spacing: { before: 140 } }));
@@ -134,7 +134,7 @@ async function buildDocx(reading) {
       children.push(para(h.emptyNote, { italic: true }));
     }
   });
-
+ 
   const rec = reading.recommendations;
   if (rec) {
     children.push(heading('Recommendations & Suggestions'));
@@ -157,7 +157,7 @@ async function buildDocx(reading) {
       rec.focusAreas.forEach(f => children.push(para(`${f.planet} (${f.level}): ${f.text}`)));
     }
   }
-
+ 
   children.push(heading('AI-Generated Explanations'));
   if (reading.aiExplanation && reading.aiExplanation.text) {
     children.push(para(`Generated via the user's own Anthropic API key on ${fmtDate(reading.aiExplanation.generatedAt)} ${fmtTime(reading.aiExplanation.generatedAt)} UTC (model: ${reading.aiExplanation.model || 'claude-sonnet-5'}).`, { italic: true }));
@@ -174,7 +174,7 @@ async function buildDocx(reading) {
   } else {
     children.push(para('Add your Anthropic API key in Settings to include AI-generated explanations in future reports.', { italic: true }));
   }
-
+ 
   if (reading.vimshottariDasha) {
     children.push(heading('Vimshottari Mahadasha'));
     children.push(para(`Starting lord at birth: ${reading.vimshottariDasha.startingLord} (birth nakshatra: ${reading.vimshottariDasha.birthNakshatra.name})`));
@@ -183,7 +183,7 @@ async function buildDocx(reading) {
       reading.vimshottariDasha.mahadashas.map(e => [e.lord, fmtDate(e.start), fmtDate(e.end), `${e.years.toFixed(2)} yrs`])
     ));
   }
-
+ 
   if (reading.nakshatraDetail && reading.nakshatraDetail.moonNakshatra) {
     const n = reading.nakshatraDetail.moonNakshatra;
     children.push(heading('Nakshatra Profile (Moon)'));
@@ -195,25 +195,39 @@ async function buildDocx(reading) {
     if (n.thingsToDo) { children.push(new Paragraph({ children: [new TextRun({ text: 'Things to do', bold: true, size: 22 })], spacing: { before: 100 } })); children.push(para(n.thingsToDo)); }
     if (n.remedies) { children.push(new Paragraph({ children: [new TextRun({ text: 'Remedies', bold: true, size: 22 })], spacing: { before: 100 } })); children.push(para(n.remedies)); }
   }
-
+ 
+  if (reading.nodalAxis) {
+    const na = reading.nodalAxis;
+    children.push(heading('Rahu–Ketu Karmic Axis'));
+    children.push(para('Interpretive karmic reading of the nodes by sign (Rahu Ketu Workshop notes) - separate from BNN\'s numbered rules.', { italic: true }));
+    children.push(para(`Rahu in ${na.rahu.sign} (house ${na.rahu.house} from Jupiter, ${na.rahu.degree}°) / Ketu in ${na.ketu.sign} (house ${na.ketu.house} from Jupiter, ${na.ketu.degree}°)`));
+    children.push(para(na.general.axis));
+    children.push(heading(`Ketu in ${na.ketu.sign} - past patterns`, HeadingLevel.HEADING_2));
+    children.push(para(na.ketu.text));
+    children.push(para(`Suggested approach: ${na.ketu.solutions}`));
+    children.push(heading(`Rahu in ${na.rahu.sign} - direction of growth`, HeadingLevel.HEADING_2));
+    children.push(para(na.rahu.text));
+    children.push(para(`Suggested approach: ${na.rahu.solutions}`));
+  }
+ 
   if (reading.parasharicCrossRef) {
     const pc = reading.parasharicCrossRef;
     children.push(heading('Parashari Cross-Reference'));
     children.push(para('Standard Ascendant-based Parashari Jyotish (House Lords in Houses, Graha Phala) - conventional cross-reference, not BNN\'s own methodology.', { italic: true }));
-
+ 
     children.push(new Paragraph({ children: [new TextRun({ text: 'House Lords', bold: true, size: 22 })], spacing: { before: 100 } }));
     children.push(simpleTable(
       ['House', 'Sign', 'Lord', 'Lord placed in house', 'Interpretation'],
       pc.houseLords.map(h => [String(h.house), h.sign, h.lordName, h.lordPlacedInHouse ? String(h.lordPlacedInHouse) : '—', h.interpretation || '—'])
     ));
-
+ 
     children.push(new Paragraph({ children: [new TextRun({ text: 'Planets in Houses', bold: true, size: 22 })], spacing: { before: 140 } }));
     children.push(simpleTable(
       ['Planet', 'House', 'Interpretation'],
       pc.planetsInHouses.map(p => [p.planet, String(p.house), p.interpretation || '—'])
     ));
   }
-
+ 
   if (reading.navtaraLive) {
     const nv = reading.navtaraLive;
     children.push(heading('Live Transit Reading (Navtara Chakra)'));
@@ -224,16 +238,16 @@ async function buildDocx(reading) {
       nv.transits.map(t => [t.planet, t.currentNakshatra, t.currentSign, `${t.taraNumber} (${t.taraName})`, t.auspiciousness || '—'])
     ));
   }
-
+ 
   children.push(new Paragraph({ text: '', spacing: { before: 300 } }));
   children.push(para('Generated by BNN_ASTRO_AI. BNN analysis is deterministic, rule-based output derived from BNN bootcamp training material; the Vedic Kundli/Pañchāṅga/Vimshottari Dasha section is the conventional Ascendant-based cross-reference. For guidance only — not a substitute for a qualified practitioner’s consultation.', { italic: true }));
-
+ 
   const doc = new Document({ sections: [{ children }] });
   return Packer.toBuffer(doc);
 }
-
+ 
 // ----------------------------------------------------------------- PDF ----
-
+ 
 async function buildPdf(reading) {
   const chartImagePng = await renderChartImagePng(reading.vedicChart);
   return new Promise((resolve, reject) => {
@@ -242,23 +256,23 @@ async function buildPdf(reading) {
     doc.on('data', c => chunks.push(c));
     doc.on('end', () => resolve(Buffer.concat(chunks)));
     doc.on('error', reject);
-
+ 
     const p = reading.planets;
     const h1 = (t) => { doc.moveDown(0.6); doc.fontSize(16).fillColor('#8f1d21').text(pdfSafe(t), { underline: false }); doc.fillColor('black').fontSize(10); };
     const h2 = (t) => { doc.moveDown(0.3); doc.fontSize(12).fillColor('#cc5e15').text(pdfSafe(t)); doc.fillColor('black').fontSize(10); };
     const body = (t) => { doc.fontSize(10).fillColor('black').text(pdfSafe(t), { align: 'left' }); };
-
+ 
     doc.fontSize(22).fillColor('#cc5e15').text('BNN_ASTRO_AI - Chart Report', { align: 'center' });
     doc.moveDown(0.3);
     doc.fontSize(11).fillColor('black').text(pdfSafe(`${reading.meta.name || 'Native'} — ${reading.meta.place || ''}`), { align: 'center' });
     doc.fontSize(10).text(pdfSafe(`Birth: ${fmtDate(reading.birthUtc)} ${fmtTime(reading.birthUtc)} UTC  |  Ayanamsa: ${reading.ayanamsa}°  |  Jeeva Lagna: ${reading.jeevaLagna.sign}`), { align: 'center' });
-
+ 
     if (chartImagePng) {
       h1('Natal Chart (D1, North Indian)');
       doc.image(chartImagePng, { fit: [220, 220], align: 'center' });
       doc.moveDown(0.5);
     }
-
+ 
     if (reading.vedicChart) {
       h1('Vedic Kundli Summary');
       body(`Ascendant (Lagna): ${reading.vedicChart.ascendant.sign} ${reading.vedicChart.ascendant.degree}°  |  Nakshatra: ${reading.vedicChart.ascendant.nakshatra.name}, pada ${reading.vedicChart.ascendant.nakshatra.pada}`);
@@ -269,25 +283,25 @@ async function buildPdf(reading) {
       body(`Tithi: ${pc.tithi.name} (${pc.tithi.paksha})   Nakshatra: ${pc.nakshatra.name} pada ${pc.nakshatra.pada}   Yoga: ${pc.yoga.name}   Karana: ${pc.karana.name}   Vāra: ${pc.vara.name}`);
       body(`Sunrise: ${pc.sunrise ? fmtTime(pc.sunrise) : '—'}   Sunset: ${pc.sunset ? fmtTime(pc.sunset) : '—'}`);
     }
-
+ 
     h1('Graha Info');
     Object.entries(p).forEach(([name, v]) => {
       body(`${name}: ${v.sign} ${fmtDMS(v.dms)}  |  ${v.nakshatra.name} (${v.nakshatra.lord}) pada ${v.nakshatra.pada}${v.retrograde ? '  [R]' : ''}`);
     });
-
+ 
     h1('BNN Analysis — Houses from Jeeva Lagna (Jupiter)');
     Object.entries(p).forEach(([name, v]) => {
       const s = reading.strength[name];
       body(`${name}: ${v.sign} ${v.degree}° — House ${v.house} — ${s ? s.level : ''}`);
     });
-
+ 
     h1('Matched Planetary Combinations');
     reading.combosFound.slice().sort((a, b) => a.num - b.num).forEach(c => {
       doc.fontSize(10).fillColor('#a5760a').text(pdfSafe(`#${c.num}  ${c.behind} -> ${c.ahead}`), { continued: false });
       doc.fillColor('black').text(pdfSafe(c.text.replace(/\*\*/g, '')));
       doc.moveDown(0.2);
     });
-
+ 
     h1('House-by-House Reading');
     reading.houseReadings.forEach(hr => {
       doc.fontSize(11).fillColor('#8f1d21').text(pdfSafe(`House ${hr.house}${hr.title ? ' — ' + hr.title : ''}`));
@@ -295,7 +309,7 @@ async function buildPdf(reading) {
       if (hr.lines.length) hr.lines.forEach(l => body(`${l.planet}${l.retrograde ? ' (R)' : ''}: ${l.text}`));
       else if (hr.emptyNote) body(hr.emptyNote);
     });
-
+ 
     const rec = reading.recommendations;
     if (rec) {
       h1('Recommendations & Suggestions');
@@ -316,7 +330,7 @@ async function buildPdf(reading) {
         rec.focusAreas.forEach(f => body(`${f.planet} (${f.level}): ${f.text}`));
       }
     }
-
+ 
     h1('AI-Generated Explanations');
     if (reading.aiExplanation && reading.aiExplanation.text) {
       body(`Generated via the user's own Anthropic API key on ${fmtDate(reading.aiExplanation.generatedAt)} ${fmtTime(reading.aiExplanation.generatedAt)} UTC (model: ${reading.aiExplanation.model || 'claude-sonnet-5'}).`);
@@ -330,13 +344,13 @@ async function buildPdf(reading) {
     } else {
       body('Add your Anthropic API key in Settings to include AI-generated explanations in future reports.');
     }
-
+ 
     if (reading.vimshottariDasha) {
       h1('Vimshottari Mahadasha');
       body(`Starting lord at birth: ${reading.vimshottariDasha.startingLord} (birth nakshatra: ${reading.vimshottariDasha.birthNakshatra.name})`);
       reading.vimshottariDasha.mahadashas.forEach(e => body(`${e.lord}: ${fmtDate(e.start)} → ${fmtDate(e.end)}  (${e.years.toFixed(2)} yrs)`));
     }
-
+ 
     if (reading.nakshatraDetail && reading.nakshatraDetail.moonNakshatra) {
       const n = reading.nakshatraDetail.moonNakshatra;
       h1('Nakshatra Profile (Moon)');
@@ -348,7 +362,21 @@ async function buildPdf(reading) {
       if (n.thingsToDo) { h2('Things to do'); body(n.thingsToDo); }
       if (n.remedies) { h2('Remedies'); body(n.remedies); }
     }
-
+ 
+    if (reading.nodalAxis) {
+      const na = reading.nodalAxis;
+      h1('Rahu-Ketu Karmic Axis');
+      body(`Interpretive karmic reading of the nodes by sign (Rahu Ketu Workshop notes) - separate from BNN's numbered rules.`);
+      body(`Rahu in ${na.rahu.sign} (house ${na.rahu.house} from Jupiter, ${na.rahu.degree}°) / Ketu in ${na.ketu.sign} (house ${na.ketu.house} from Jupiter, ${na.ketu.degree}°)`);
+      body(na.general.axis);
+      h2(`Ketu in ${na.ketu.sign} - past patterns`);
+      body(na.ketu.text);
+      body(`Suggested approach: ${na.ketu.solutions}`);
+      h2(`Rahu in ${na.rahu.sign} - direction of growth`);
+      body(na.rahu.text);
+      body(`Suggested approach: ${na.rahu.solutions}`);
+    }
+ 
     if (reading.parasharicCrossRef) {
       const pc = reading.parasharicCrossRef;
       h1('Parashari Cross-Reference');
@@ -358,7 +386,7 @@ async function buildPdf(reading) {
       h2('Planets in Houses');
       pc.planetsInHouses.forEach(pl => body(`${pl.planet} in house ${pl.house}: ${pl.interpretation || '—'}`));
     }
-
+ 
     if (reading.navtaraLive) {
       const nv = reading.navtaraLive;
       h1('Live Transit Reading (Navtara Chakra)');
@@ -366,12 +394,13 @@ async function buildPdf(reading) {
       body(`Natal Moon Nakshatra (Janma): ${nv.natalMoonNakshatra}`);
       nv.transits.forEach(t => body(`${t.planet}: ${t.currentNakshatra} (${t.currentSign}) — Tara ${t.taraNumber} (${t.taraName}), ${t.auspiciousness || '—'}`));
     }
-
+ 
     doc.moveDown(1);
     doc.fontSize(8).fillColor('gray').text(pdfSafe('Generated by BNN_ASTRO_AI. BNN analysis is deterministic, rule-based output derived from BNN bootcamp training material; the Vedic Kundli/Panchanga/Vimshottari Dasha section is the conventional Ascendant-based cross-reference. For guidance only — not a substitute for a qualified practitioner’s consultation.'), { align: 'left' });
-
+ 
     doc.end();
   });
 }
-
+ 
 module.exports = { buildDocx, buildPdf };
+ 
