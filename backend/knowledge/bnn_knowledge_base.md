@@ -1,6 +1,5 @@
 # BNN (Bhrigu Nandi Nadi) Astrology — Knowledge Base
-### Compiled from BNN Bootcamp training materials (Astro Vaibhav Gupta)
-
+### Compiled from BNN Bootcamp training materials 
 This document consolidates all substantive methodology, rules, planetary combinations, and predictive statements found across the 14 uploaded BNN bootcamp PDFs. It is organized for use as a reference/rule base for a rule-based or AI-assisted BNN interpretation engine. Wording of predictions is kept close to source for fidelity, since a rule engine will need to encode this exact logic.
 
 ---
@@ -692,6 +691,89 @@ This file's content (combinations 25–30: Moon+Saturn, Saturn+Moon, Moon+Rahu, 
 4. Saturn 5° (Retrograde) + Moon 10°
 5. Saturn 5° + Moon 5° (exact same degree)
 This is a teaching tool for illustrating Rule #9 (retrograde planets), applied specifically to the Moon+Saturn pairing.
+
+---
+
+## 12. Rahu–Ketu Karmic Axis (Workshop Notes)
+
+**Source: "Rahu Ketu Workshop" (Astro Vaibhav Gupta, YouTube, Nov 27, 2024) — transcribed from the trainer's slides, no PDF was issued.**
+**Status of this material:** interpretive / karmic-psychological reading of the nodes by sign. It is *not* one of the numbered BNN rules (Rules 1–9) and should not be encoded as a deterministic rule in the engine. Use it as narrative guidance for the AI explanation and for the report's "Rahu–Ketu" commentary, kept separate from the rule-based findings.
+
+### 12.1 Core concepts
+
+- **Rahu (North Node):** desires, ambitions, material growth. Represents unresolved desires from past lives that drive present actions (*aagami karma* / "future karma"). Its placement shows where the native has strong desires, ambitions or challenges to overcome.
+- **Ketu (South Node):** spiritual growth, detachment, letting go of worldly attachments; forms habits we are very rigid to change. Associated with *sanchit karma* ("accumulated karma"): the sum of past-life actions. Its placement shows where the native has already gained mastery or resolved lessons.
+- **Gene theory (karma axis):** we carry ~50% of our traits from mother (Moon) and ~50% from father (Sun); they in turn got theirs from their parents, so ~25% each from the four grandparents. Rahu and Ketu play a major role in subconscious programming; this is why they are called the karma axis. (Trainer's board notes pair Rahu with the paternal grandparents "Dada/Dadi" and Ketu with the maternal "Nana/Nani".)
+- **The axis as a story:** Rahu = what you want to achieve; Ketu = what you have already experienced and learned. Rahu can only shine once Ketu's lessons are learned and past issues resolved (example given: to succeed as a musician, first address the past mistakes and missed opportunities with music).
+- **Reading pattern used for every pair below:** the Ketu sign = past-life habits/mastery and what feels detached now; the Rahu sign = the desire and growth direction of this life; then "possible solutions" (remedial lifestyle suggestions).
+- Trainer's house pairings (handwritten on the slides, counted from the sign): Aries/Libra = 1/7, Taurus/Scorpio = 2/8, Gemini/Sagittarius = 3/9, Cancer/Capricorn = 4/10, Leo/Aquarius = 5/11, Virgo/Pisces = 6/12. (In BNN these are counted from Jupiter's sign, as the first house.)
+
+### 12.2 Sign-by-sign readings
+
+#### Pair 1 — Rahu in Aries / Ketu in Libra
+- **Ketu in Libra:** in a prior life the native judged happiness by the success and failure of people close to him and did everything to please them without appreciation, leaving resentment. In this life he spends much of the first half coping with the residue of his gullibility. Becomes very practical, hindering spiritual growth; constant indecisiveness and letting others run his life; interest in fashion, cosmetics, shopping; extremely co-operative to the point of being a doormat; inferiority complex; gracious host; works hard at romance but the relationship suffers. Decisions on marriage, job and lifestyle are planned logically — "logic without feeling" leads to marriage without love and existence without living; eventually depression forces him to act on feelings, giving a nodal balance between Aries and Libra.
+- **Rahu in Aries:** makes the person stubborn, takes up daring tasks, progressive nature. Aries is the cardinal fire sign, "the" sign of self-manifestation where the "I" must stand out against the world. This node placement is usually a strong incentive to be creative: incapable of settling down to routine work even when output would increase; what matters is creating something unlike anything anyone else can create — something creative that is completely personal is the ultimate self-expression for this sign.
+- **Possible solutions (Ketu in Libra side):** force yourself to undertake leadership roles; dare to be enthusiastic about your beliefs and interests; cultivate spontaneity; do things on your own once in a while; find a guru to follow; find a strong person to lean on. His biggest lesson is learning to make his head rule his heart, since he still melts too easily at the slightest attention.
+- **Possible solutions (Rahu in Aries side):** develop leadership quality; prepare a goal list in audio and writing format; personality development classes; scouting at state and national level; psychological counselling.
+
+#### Pair 2 — Rahu in Taurus / Ketu in Scorpio
+- **Ketu in Scorpio:** accustomed from past lives to a peculiar intensity that turns to anger when not allowed expression; deeply hurt, "like a wounded animal" dangerous to anyone who represents the slightest threat. Past lives involved many hidden or underground activities, rebellion against normal life structure and various punishments; distorted desire and misuse of power may have been seen. In this life the desire is to live a life of ease without complications, maintain karmic status, avoid further downward spirals, with a stubborn approach toward those who oppose his ideals and concerns about earnings and resources. Inner journey from Scorpio to Taurus: stubbornness, defensiveness and possessiveness are the right way of doing things for him (as written).
+- **Rahu in Taurus:** love and affection from the heart and mind rather than the senses, so jealousy and hesitation develop; material wealth comes through expression of creativity; desire to possess things and people; dislikes physical labour; sexual desire at its peak.
+- **Possible solutions:** transform sexual desire into divine love; move toward Taurus Rahu only with appreciation and gratitude for the land lived on and the resources one has; understand the difference between wants and needs; trust people. Gardening, cooking classes, cooking at home, drawing or creative work, learning to give and accept compliments and gifts — "the volcanoes of Scorpio can turn into the blue waters of Taurus".
+
+#### Pair 3 — Rahu in Gemini / Ketu in Sagittarius
+- **Ketu in Sagittarius:** past lives of wildness, driven by instinct and nervous energy; restless and rash tendencies, defends his own point of view, bachelor-like soul so others can't come close naturally, feels alone; seeks shortcuts and acts foolishly in social situations without realising it; embarrassing situations keep forcing him to polish social skills, public behaviour, mannerisms and speech. Sagittarius Ketu understood the nature of the universe and through Gemini Rahu must spread that message — the cause of eternal restlessness. Past life had isolation; this life's purpose is sharing knowledge and awareness.
+- **Rahu in Gemini:** dreams of a life of variety; wants to be seen as adaptable, a good conversationalist, educated; transmutes emotions into interests; interested in spirituality, education, travel in a passive, abstract way rather than by experiencing; mixes well with others only while assuming the role of teacher.
+- **Possible solutions:** develop latent communication skills, share whatever you learn, become expert at what you do first; journalism, keeping a journal or diary, physical activity such as dancing. Sagittarius wants freedom and Gemini Rahu gets there by developing the mind and introspection of "who am I".
+
+#### Pair 4 — Rahu in Cancer / Ketu in Capricorn
+- **Ketu in Capricorn:** past-life habits of ambition, seeking authority and desire to dominate others — a tendency that has to be faced and overcome. Soul has come receiving status and pride, so constantly seeks respect and validation; attention seekers who work double hard to prove themselves heroes; less emotional sensitivity. Lives in the past, carries burdens, can fall ill if failure comes, sees the world with a self-righteous attitude, sets a wall around himself, and seeking advice makes him feel inferior; very materialistic go-getters. The soul learned accomplishment by hard work and toil so it knows no nourishment; through Cancer Rahu it needs to nourish others and receive nourishment. People moving Capricorn → Cancer look young as age passes. Neglected older folks in the past life, so in this life believes in family bonding — may look cold but is very emotional.
+- **Rahu in Cancer:** brings light in darkness, nurturing nature and good luck. Parents may have sent the native to hostel / lived away / childhood not right, so he becomes materialistic but must realise the Cancer traits to succeed; represses emotions out of fear of being cheated and not being able to handle it.
+- **Possible solutions:** the ultimate aim is nourishing others — food distribution, spiritual-knowledge distribution, creating jobs, learning to adapt wants to needs (trainer marks Cancer = Needs, Capricorn = Want, "Job"); nurturing professions, self-love meditation, finding a family and achieving emotional harmony; travel ("a must").
+
+#### Pair 5 — Rahu in Leo / Ketu in Aquarius
+- **Ketu in Aquarius:** snobbish, aloof in past life, craved the absence of friends; people were not there in stress; developed detachment from most of the world, which felt free; very secretive. Needs to learn that isolation is the technique to gather inner strength. Aquarius has Rahu and Saturn energy — past habits of being revolutionary, creating something new, believing in equality for all. Wishes to be alone but cannot live without people and admiration; justice seeker who dislikes wrong actions. In this life he steps on others to succeed but remembers and gives them due credit; superiority complex and stubbornness hinder relationships.
+- **Rahu in Leo:** helps the native realise desires; has ambition, good taste, can easily identify correct people and talents, fine imagination, desire for leadership roles and politics, may want to be a famous star or actor; may show fake loyalty that Aquarius Ketu does not approve of, which hinders success.
+- **Possible solutions:** imaginative work, devote yourself to a humanitarian cause, have dignity and channel it properly; interior decoration, political involvement, leadership roles in society or school, joining an organisation; always visualise "what would happen if…" (using the Leo Rahu).
+
+#### Pair 6 — Rahu in Virgo / Ketu in Pisces
+- **Ketu in Pisces:** past-life habits of escaping or coping out of responsibilities; superstitious; lived in isolation (12th house); in this life mindful of his words so they do not hurt others; was robbed by others because of his emotional side yet still cannot see anybody in pain. Past-life experience of pain lets him easily feel others' pain.
+- **Rahu in Virgo:** after enough emotional drama the person seeks Virgo Rahu, developing reasoning about who is worthy of his sympathy. Wants to be the best in business, may be the boss's "right hand" without whom decisions are not taken; generally a quiet person whose feelings matter more than logic; must develop Virgo's analytical skills; imaginative, like a poet; married life suffers due to this Rahu placement.
+- **Possible solutions:** learn to avoid escapism and daydreaming and to say "no" (people who know his sensitivity misuse it, which becomes his biggest problem); purification and perfection, self-discipline, the art of saying no, remove the "burning coal" from the hand by forgiving everyone. For Virgo Rahu: inspirational writing, typing, neatness, gardening, public speaking.
+
+#### Pair 7 — Ketu in Aries / Rahu in Libra
+*(The trainer's slide is titled "Rahu in Aries & Ketu in Libra" but the text is about Ketu in Aries and Rahu in Libra; his handwritten corrections on the slide swap the labels. Filed here as Ketu in Aries / Rahu in Libra.)*
+- **Ketu in Aries:** previous incarnations were spent in a lot of physical action, temper and aggression; achieved and lost much because balance was not understood. Very stubborn — will not leave what he has decided, causing arguments and conflicts in relationships; past-life progress and competition were all that mattered; deep sense of "I", fits of anger, need to prove himself; great assertiveness due to upbringing.
+- **Rahu in Libra:** a sign of balance and harmony; everything taken up will have a definite sense of justice, priority and deeper significance; progress will be rapid and wealth and honour acquired; happiness comes only after he is forced to re-evaluate his desires, involve with people and abandon ego.
+- **Possible solutions:** stabilise relationships in terms of give and take; learn to differentiate between caring and controlling; bring balance by fulfilling others' needs. For Libra Rahu: care for skin and hygiene, hair styling, beauty regime, new furnishings.
+
+#### Pair 8 — Rahu in Scorpio / Ketu in Taurus
+- **Ketu in Taurus:** in previous incarnations gained mastery over material wealth and possessions — family, food, house, gems, jewellery. Residual desire for stability and support so luxuries can be used when disaster comes. Ketu does not let him be happy with material things: he will have all the wealth but it will not give happiness. Upbringing or environment with over-emphasis on money. **Solutions:** donate a part of the wealth; do business in partnerships.
+- **Rahu in Scorpio:** occult, digging into truth, mysticism, transformation ("caterpillar becomes butterfly"); Rahu here wants the person tested; change and transformation are the main aim, and during Rahu's period major transformation is seen. **Possible solutions:** astrology, occult, philosophy, perfume making, research work.
+
+#### Pair 9 — Rahu in Sagittarius / Ketu in Gemini
+- **Ketu in Gemini:** the person has gained mastery over publication, communication, ideas, conveying thoughts, duality, multitasking and decision making. In this life: indecisive, detachment of ego with communication — has knowledge but is reluctant to speak, facial expressions and words do not match; feels a lack of friends and people to talk to, and when they come they do not stay long. Here to free himself from bondage and seek universal knowledge; interested in psychology but hates studying.
+- **Possible solutions:** take up weekend/Sunday classes or courses of real interest and do them fully; deliberately put yourself in situations where you have to speak.
+- **Rahu in Sagittarius:** interest in higher education, law, spirituality and the guru's teaching. Interested in dharma but breaks traditional patterns and brings his own new way of spirituality, dharma or philosophy; objectives don't reach completion of things; dull personality. (Trainer's handwriting notes "Ju", Jupiter, as the sign lord.) **Possible solutions:** teaching whatever you know, Gita reading, sports.
+
+#### Pair 10 — Rahu in Capricorn / Ketu in Cancer
+- **Ketu in Cancer:** Cancer shows emotional security; Ketu here means he mastered home, emotions and care in a past life, remembers it but feels detached from that area in this life. Past-life experience of a lack of love, care and good parenting — seeks nurture and care from everyone around; sensitive past-life feelings never let him become a fully mature adult ("immaturity residue"). Highest karma in this life is to understand his true responsibility and do it to the fullest. In a female chart the node position usually shows a search for a father figure; in a male chart, taking up the father role.
+- **Rahu in Capricorn:** business ambition, foreign tours; gives good health and vitality if Saturn is well placed; emotional, reluctant to change; the desire for dream fulfilment is less than the need for emotional security.
+- **Possible solutions:** identify what you want to do, study the lives of people who have already done it and follow their footsteps, take baby steps; mathematical work, travel, exploring various cultures, astrology and occult.
+
+#### Pair 11 — Rahu in Aquarius / Ketu in Leo
+- **Ketu in Leo:** Leo shows performing arts, dynamism, creativity, authority and administration; Ketu here means the native has experienced these, status was high, and he had no time for people. In this life he has to learn to mix with others, help, and do a social cause. Problems: excessive craving for warmth, hiding from dark truths of reality, problems in romance.
+- **Possible solutions:** involvement brings happiness — join parties, birthdays; give yourself away without asking for anything in return.
+- **Rahu in Aquarius:** desire for moral and emotional support. Aquarius is innovation, freedom, social groups, networks, wishes, dreams, brotherhood, upliftment, a scientific sign. His aim in life is to develop the concept of universal brotherhood. **Possible solutions:** scientific study, public speaking, writing, a YouTube channel, mass communication, international things.
+
+#### Pair 12 — Rahu in Pisces / Ketu in Virgo
+- **Ketu in Virgo:** not favourable for the mind; makes the native judgmental and critical of everything, unable to appreciate beauty, inclined to analysis. "The hardest position"; the native tends to realise his own rigidity. In the past life he was methodical, detail-oriented, calculative, perfectionist and practical; these habits remain in the subconscious. **Only remedy for the restlessness:** meditation an hour a day, enjoy your own company, judge people only on their abilities.
+- **Rahu in Pisces:** seeks being left alone and isolation, higher knowledge of self; cannot tolerate rejection, which brings depression; unexpected acquisition from foreigners, gives vitality; questions what existence is; psychic abilities, imagination, creative information, best sci-fi authors. **Possible solutions:** aviation, swimming, foreign travel, true spirituality, healing, seeking emptiness.
+
+### 12.3 Coverage notes (for maintainers)
+- Coverage is complete: Ketu and Rahu are both covered for all 12 signs (Rahu in Aries, Sagittarius and Aquarius were added from later batches of slides).
+- Pair 7's slide title was mislabelled by the trainer and is filed per his handwritten correction.
+- Nothing here changes the Rahu/Ketu mechanics in Rule #6 (always retrograde, 180° apart, 12th-house aspect, no mutual 7th aspect).
 
 ---
 
